@@ -11,3 +11,8 @@
 /log/*
 !/log/.keep
 /tmp
+
+# ignore bundle and modules
+node_modules/
+bundle.js
+bundle.js.map
