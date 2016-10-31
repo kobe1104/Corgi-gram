@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-gem 'pg'
+
 gem 'pry-rails'
 gem 'annotate'
 gem 'better_errors'
