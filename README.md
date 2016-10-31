@@ -1,6 +1,6 @@
-# FresherNote
+# Corgigram
 
-[Heroku link][heroku] **Note:** This should be a link to your production site
+[Heroku link][heroku]
 
 [Trello link][trello]
 
@@ -38,7 +38,7 @@ serve frontend interactions. This App will have the following functionalities:
 
 ## Implementation Timeline
 
-### Phase 1: Backend setup and Front End User Authentication (1 day)
+### Phase 1: Backend setup and Front End User Authentication (2 days)
 
 **Objective:** Functioning rails project with front-end Authentication
 
@@ -50,19 +50,19 @@ serve frontend interactions. This App will have the following functionalities:
 
 **Objective:** Profile page showing number of posts, followers and followed. Edit button and form work properly.
 
-### Phase 5: Photo component & Api (1 day)
+### Phase 5: Photo component & Api (1 day w2 Monday)
 
 **Objective:** Photos showing on posts, profile(profile picture) and feed.
 
-### Phase 6: Comment component and Api (1 day w2)
+### Phase 6: Comment component and Api (1 day w2 Tuesday)
 
 **Objective:** Comments showing on posts.
 
-### Phase 7: Posts component and Api (2 days w2 Wednesday)
+### Phase 7: Posts component and Api (2 days w2 Thursday)
 
 **Objective:** Posts contain a photo, comments, likes, author and body.
 
-### Phase 8: Infinite scroll & css Styling (2 days w2 Friday)
+### Phase 8: Infinite scroll & final css Styling (1 days w2 Friday)
 
 **Objective:** Fetch new posts when scrolled to the bottom, all
 components are well positioned with proper styling.
