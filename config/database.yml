@@ -78,8 +78,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: corgi_gram_production
-  username: corgi_gram
-  password: <%= ENV['CORGI_GRAM_DATABASE_PASSWORD'] %>
+# production:
+#   <<: *default
+#   database: corgi_gram_production
+#   username: corgi_gram
+#   password: <%= ENV['CORGI_GRAM_DATABASE_PASSWORD'] %>

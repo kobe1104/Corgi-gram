@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 
+gem 'pg'
 gem 'pry-rails'
 gem 'annotate'
 gem 'better_errors'
@@ -49,5 +50,5 @@ end
 
 group :production do
   gem 'rails_12factor'
-  gem 'pg'
+  gem 'newrelic_rpm'
 end
