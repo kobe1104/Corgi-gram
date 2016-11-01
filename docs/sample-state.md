@@ -9,25 +9,21 @@
       3: {id: 3, username: "alexbenedict", email: "alex123@gmail.com",
       nickname: "corgicat55"
       }
-    }
+    },
+    icon_url: "pic03.jpg"
   },
-  posts: {
+  photos: {
     1: {
       id: 1,
       author_id: 1,
-      body: "life is a marathon not a sprint",
-      photo: {id: 33, author_id: 1, post_id: 1
-      },
+      caption: "life is a marathon not a sprint",
       comments: {
-        1: {id: 1, author_id: 29, post_id: 1, body: "nice saying"
-        },
-        2: {id: 2, author_id: 7,
-        post_id: 1, body: "great shot!"}
+        1: {id: 1, author_id: 29, body: "nice saying"},
+        2: {id: 2, author_id: 7, body: "great shot!"}
       },
       likes: {
-        1: {id: 1, author_id: 29, post_id: 1},
-        2: {id: 2, author_id: 7,
-        post_id: 1}
+        1: {id: 1, author_id: 29},
+        2: {id: 2, author_id: 7}
       }
     }  
   }

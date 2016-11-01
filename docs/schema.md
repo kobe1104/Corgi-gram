@@ -9,20 +9,14 @@ email           | string    | not null, indexed, unique
 password_digest | string    | not null
 session_token   | string    | not null, indexed, unique
 nickname        | string    |
-
-## posts
-column name | data type | details
-------------|-----------|-----------------------
-id          | integer   | not null, primary key
-author_id   | integer   | not null, foreign key (references users), indexed
-body | string    |
+icon_url        | string    |
 
 ## photos
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-post_id     | integer   | not null
 author_id   | integer   | not null, foreign key (references users), indexed
+caption     | string    |
 type        | string    | not null
 <!-- type is either profile or post -->
 

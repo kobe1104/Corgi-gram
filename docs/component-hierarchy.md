@@ -4,17 +4,17 @@
   - AuthForm
 
 **MainContainer**
+  - Main
   - Nav bar
     - Home icon
     - Search
     - profile
     - Recent activities
-
   - Infinite feed
-
   - Footer
 
 **ProfileContainer**
+  - Profile
   - Follows/posts/followed number
   - Edit button
   - Nickname
@@ -22,22 +22,20 @@
   - Follow
   - NewPost
 
-**PostContainer**
-  - Body
-  - Like
+**PhotoContainer**
+  - Photo
+  - NewPhoto
+  - Caption
   - LikesNumber
   - AddComment
   - Time
   - AddTag
 
-**PhotoContainer**
-  - Photo
-
-**CommentContainer**
-  - Body
-
-**Search**
+**SearchContainer**
   - Search
+  - Search Bar
+  - Search Feed
+
 
 
 
@@ -49,8 +47,6 @@
 | "/sign-in" | "AuthFormContainer" |
 | "/" | "MainContainer" |
 | "/user/:username" | "ProfileContainer" |
-| "/user/:username/post/:id | "PostContainer" |
-| "/user/:username/post/:id/comments | "CommentContainer" |
 | "/user/:username/post/:id/photo/:id | "PhotoContainer" |
-| "/new-post | "NewPost" |
+| "/new-photo | "NewPhoto" |
 | "/search | "Search" |

@@ -12,6 +12,7 @@
 
 - `POST /api/username`
 - `PATCH /api/username`
+- `GET /api/username`
 
 ### Session
 
@@ -19,30 +20,30 @@
 - `DELETE /api/session`
 - `GET /api/session`
 
-### Posts
-
-- `GET /api/posts/:id`
-- `GET /api/posts`
-- `POST /api/posts`
-- `PATCH /api/posts/:id`
-- `DELETE /api/posts/:id`
-
 ### Photos
 
 - `GET /api/photos/:id`
-- `GET /api/posts`
-- `POST /api/posts`
-- `DELETE /api/posts/:id`
+- `GET /api/photos`
+- `POST /api/photos`
+- `PATCH /api/photos/:id`
+- `DELETE /api/photos/:id`
+
+### Comments
+
+- `GET /api/comments`
+- `GET /api/comments/:id`
+- `POST /api/comments`
+- `PATCH /api/comments/:id`
+- `DELETE /api/comments/:id`
+
 
 ### Likes
 
-- `GET /api/posts/:id/likes`
 - `POST /api/posts/:id/likes/:id`
 - `DELETE /api/posts/:id/likes/:id`
 
 ### Follows
 
-- `GET /api/username/:id/follows`
 - `POST /api/username/:id/follows/:id`
 - `DELETE /api/username/:id/follows/:id`
 
