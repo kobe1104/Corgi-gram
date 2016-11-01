@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-
+ruby "2.3.1"
 gem 'pry-rails'
 gem 'annotate'
 gem 'better_errors'
