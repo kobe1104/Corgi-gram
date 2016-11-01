@@ -2,7 +2,7 @@ import {RECEIVE_CURRENT_USER, RECEIVE_ERRORS, LOGOUT } from '../actions/session_
 import { merge } from 'lodash';
 
 const default_state = Object.freeze({
-  currentUser: null, errors: []}); // need to create session controller
+  currentUser: null, errors: []});
 
 const SessionReducer = (state = default_state, action) => {
   Object.freeze(state);
