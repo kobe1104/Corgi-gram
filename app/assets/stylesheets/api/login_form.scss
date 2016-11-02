@@ -1,0 +1,98 @@
+// Place all the styles related to the api/sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// flexbox justify content space between
+// button onclick{this.props.route.push('/')}
+
+
+// .username-input {
+//   // background-color: green;
+//   display: flex;
+//
+// }
+//
+// .password-input {
+//   display: flex;
+//
+// }
+
+
+//
+// .email-input {
+//   display: flex;
+// }
+
+// .signup-button {
+//   display: flex;
+// }
+
+// .signup-form-box {
+//   display: flex;
+//   flex-direction: row;
+// }
+//
+// .signup-img {
+//   display: flex;
+//
+// }
+
+
+.signup-form-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.login-form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.login-form-box .signup-button {
+  background-color: #4286f4;
+  border: none;
+  color: white;
+  padding: 0px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+.login-button {
+  background-color: #4286f4;
+  border: none;
+  color: white;
+  padding: 0px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.signup-link {
+  background-color: #4286f4;
+  border: none;
+  color: white;
+  padding: 0px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.login-form-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.login-form-box {
+  margin-right: 200px;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #ededed;
+}

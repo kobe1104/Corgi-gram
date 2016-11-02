@@ -44,19 +44,24 @@ class SignupForm extends React.Component {
     }
   }
 
+  guestLogin(e) {
+    e.preventDefault();
+    const user = {username: 'henry1', password: 'password'};
+    this.props.login({user});
+  }
+
+
 
   render () {
     return  (
       <div className="signup-form-container">
-        <div>
+        <div className='auth-img'>
           <img src="https://s-media-cache-ak0.pinimg.com/736x/b0/00/17/b0001726dc9b455618abb4e6ff824305.jpg"/>
         </div>
         <form onSubmit={this.handleSubmit} className='signup-form-box'>
-          Welcome to Corgigram!
+          <div className='form-title'><span>Corgi</span>gram</div>
+
           <br/>
-          To see more
-          <br/>
-          Please Sign Up Or {this.navLink()}
           {this.renderErrors()}
           <div className='signup-form'>
             <br/>
@@ -67,6 +72,7 @@ class SignupForm extends React.Component {
                 onChange={this.update("username")}
                 className="username-input" />
             </label>
+            <br/>
             <label>
               <input type='text'
                 value={this.state.password}
@@ -74,6 +80,7 @@ class SignupForm extends React.Component {
                 onChange={this.update("password")}
                 className='password-input' />
             </label>
+            <br/>
             <label>
               <input type='text'
                 value={this.state.email}
@@ -82,8 +89,14 @@ class SignupForm extends React.Component {
                 className='email-input' />
             </label>
             <br/>
-            <input type='submit' value='Sign Up!!' />
+            <input className='signup-button' type='submit' value='Sign Up!!' />
           </div>
+          ------- Or -------
+          <br/>
+          <button className='login_link' onClick={() => this.props.router.push('/login')}>Log In</button>
+          <br/>
+          <button className='guest-button' onClick={this.guestLogin}>Guest</button>
+
         </form>
       </div>
     );
