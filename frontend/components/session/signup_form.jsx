@@ -48,28 +48,36 @@ class SignupForm extends React.Component {
   render () {
     return  (
       <div className="signup-form-container">
+        <div>
+          <img src="https://s-media-cache-ak0.pinimg.com/736x/b0/00/17/b0001726dc9b455618abb4e6ff824305.jpg"/>
+        </div>
         <form onSubmit={this.handleSubmit} className='signup-form-box'>
           Welcome to Corgigram!
+          <br/>
+          To see more
           <br/>
           Please Sign Up Or {this.navLink()}
           {this.renderErrors()}
           <div className='signup-form'>
             <br/>
-            <label> Username:
+            <label>
               <input type="text"
                 value={this.state.username}
+                placeholder='Username'
                 onChange={this.update("username")}
                 className="username-input" />
             </label>
-            <label> Password:
+            <label>
               <input type='text'
                 value={this.state.password}
+                placeholder='Password'
                 onChange={this.update("password")}
                 className='password-input' />
             </label>
-            <label> Email:
+            <label>
               <input type='text'
                 value={this.state.email}
+                placeholder='Email'
                 onChange={this.update("email")}
                 className='email-input' />
             </label>
