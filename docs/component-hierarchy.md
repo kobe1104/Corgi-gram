@@ -15,10 +15,11 @@
 
 **ProfileContainer**
   - Profile
-  - Follows/posts/followed number
-  - Edit button
-  - Nickname
-  - Log out button
+    - Nickname
+    - Follows/posts/followed number
+  - EditForm
+  - Edit Button
+  - Log out Button
   - Follow
   - NewPost
 
@@ -30,6 +31,12 @@
   - AddComment
   - Time
   - AddTag
+
+**AlbumContainer**
+  - Album
+
+**AboutContainer**
+  - About
 
 **SearchContainer**
   - Search
@@ -43,10 +50,14 @@
 
 |Path   | Component   |
 |-------|-------------|
-| "/sign-up" | "AuthFormContainer" |
-| "/sign-in" | "AuthFormContainer" |
+| "/signup" | "AuthFormContainer" |
+| "/login" | "AuthFormContainer" |
 | "/" | "MainContainer" |
 | "/user/:username" | "ProfileContainer" |
-| "/user/:username/post/:id/photo/:id | "PhotoContainer" |
+| "/user/:username/edit" | "EditForm" |
+| "/user/:username/album" | "AlbumContainer" |
+| "/user/:username/photos/:id/photo/:id | "PhotoContainer" |
+| "/photos | "PhotoContainer" |
+| "/about | "AboutContainer" |
 | "/new-photo | "NewPhoto" |
 | "/search | "Search" |

@@ -28,13 +28,13 @@
 - `PATCH /api/photos/:id`
 - `DELETE /api/photos/:id`
 
-### Comments
+<!-- ### Comments
 
 - `GET /api/comments`
 - `GET /api/comments/:id`
 - `POST /api/comments`
 - `PATCH /api/comments/:id`
-- `DELETE /api/comments/:id`
+- `DELETE /api/comments/:id` -->
 
 
 ### Likes

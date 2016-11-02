@@ -1,11 +1,11 @@
 import React from 'react';
-import SessionFormContainer from './session/session_form_container';
+import LoginFormContainer from './session/login_form_container';
+import SignupFormContainer from './session/signup_form_container';
 
-const App = ({child}) => (
+const App = ({children}) => (
   <div>
     <h1>Corgigram</h1>
-    <SessionFormContainer />
-    {child}
+    {children}
   </div>
 )
 

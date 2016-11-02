@@ -7,7 +7,7 @@ import { LOGIN, LOGOUT, SIGNUP,
 
 const SessionMiddleware = (store) => next => action => {
   const successCallback = currentUser => store.dispatch(receiveCurrentUser(currentUser));
-  const errorCallback = errors => store.dispatch(receiveErrors(errors));
+  const errorCallback = errors => store.dispatch(receiveErrors(errors.responseJSON));
 
   switch (action.type) {
     case LOGIN:
