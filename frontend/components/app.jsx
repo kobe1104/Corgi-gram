@@ -3,7 +3,7 @@ import MainContainer from './main/main_container';
 
 
 const App = ({children}) => (
-  <div >
+  <div>
     {children}
   </div>
 )
