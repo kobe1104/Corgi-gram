@@ -55,9 +55,9 @@
 | "/" | "MainContainer" |
 | "/user/:username" | "ProfileContainer" |
 | "/user/:username/edit" | "EditForm" |
-| "/user/:username/album" | "AlbumContainer" |
 | "/user/:username/photos/:id/photo/:id | "PhotoContainer" |
-| "/photos | "PhotoContainer" |
 | "/about | "AboutContainer" |
 | "/new-photo | "NewPhoto" |
 | "/search | "Search" |
+
+<!-- is  photo container gonna be the same in both main and profile? -->

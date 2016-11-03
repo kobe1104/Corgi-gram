@@ -5,8 +5,8 @@ import App from './app';
 import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container';
 import MainContainer from './main/main_container';
-
-
+import ProfileContainer from './profile/profile_container';
+import PhotoContainer from './photo/photo_container';
 
 const Root = ({store}) => {
 
@@ -26,10 +26,12 @@ const Root = ({store}) => {
   return (
     <Provider store={store}>
       <Router history={hashHistory}>
-        <Route path='/' component={App}>
+        <Route path='/' component={App} >
           <IndexRoute component={MainContainer} onEnter={_ensureLoggedIn} />
+          
           <Route path='login' component={LoginFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path='signup' component={SignupFormContainer} onEnter={_redirectIfLoggedIn} />
+          <Route path='profile' component={ProfileContainer} onEnter={_ensureLoggedIn} />
         </Route>
       </Router>
     </Provider>

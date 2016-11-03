@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
-import Root from './components/root.jsx'
+import Root from './components/root';
 import * as Action from './actions/session_actions';
 import * as Api from './util/session_api_util';
 

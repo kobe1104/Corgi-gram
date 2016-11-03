@@ -16,6 +16,7 @@ column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
 author_id   | integer   | not null, foreign key (references users), indexed
+photo_url   | string    | not null
 caption     | string    |
 type        | string    | not null
 <!-- type is either profile or post -->

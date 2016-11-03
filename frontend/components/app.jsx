@@ -1,6 +1,6 @@
 import React from 'react';
-import LoginFormContainer from './session/login_form_container';
-import SignupFormContainer from './session/signup_form_container';
+import MainContainer from './main/main_container';
+
 
 const App = ({children}) => (
   <div >

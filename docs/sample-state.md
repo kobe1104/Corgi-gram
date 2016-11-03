@@ -16,6 +16,7 @@
     1: {
       id: 1,
       author_id: 1,
+      photo_url: 'http://abc.png',
       caption: "life is a marathon not a sprint",
       comments: {
         1: {id: 1, author_id: 29, body: "nice saying"},
