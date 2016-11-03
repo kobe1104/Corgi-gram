@@ -74,7 +74,7 @@ class SignupForm extends React.Component {
             </label>
             <br/>
             <label>
-              <input type='text'
+              <input type='password'
                 value={this.state.password}
                 placeholder='Password'
                 onChange={this.update("password")}
@@ -91,7 +91,7 @@ class SignupForm extends React.Component {
             <br/>
             <input className='signup-button' type='submit' value='Sign Up!!' />
           </div>
-          ------- Or -------
+          <div className='auth-form-or'><span>Or</span></div>
           <br/>
           <button className='login_link' onClick={() => this.props.router.push('/login')}>Log In</button>
           <br/>

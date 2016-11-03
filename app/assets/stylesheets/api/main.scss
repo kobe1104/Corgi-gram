@@ -1,0 +1,65 @@
+.main-header {
+  display: flex;
+  border-bottom: 1px solid grey;
+  justify-content: space-between;
+  background-color: white;
+
+}
+
+.header-logo-group {
+  display: flex;
+}
+
+.header-user-group {
+  display: flex;
+  margin-top: 20px;
+  margin-right: 100px;
+}
+
+.user-icon {
+  height: 30px;
+  width: auto;
+  padding: 0px 10px;
+}
+
+.user-heart {
+  height: 30px;
+  width: auto;
+  padding: 0px 10px;
+}
+
+.corgi-icon {
+  height: 70px;
+  width: auto;
+  margin-left: 100px;
+}
+
+.main-title {
+  font-style: italic;
+  margin-top: 25px;
+}
+
+.main-title span {
+  color: #ffda21;
+}
+
+
+// Footer
+
+.main-footer {
+  display:flex;
+  justify-content: center;
+  
+}
+
+.footer-about {
+  padding: 0px 20px;
+}
+
+.footer-github {
+  padding: 0px 20px;
+}
+
+.footer-linkedin {
+  padding: 0px 20px;
+}
