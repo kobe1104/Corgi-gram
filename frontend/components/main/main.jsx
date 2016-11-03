@@ -6,7 +6,14 @@ import SearchBar from 'react-search-bar';
 
 class Main extends React.Component {
 
+  componentDidUpdate() {
+    if (!this.props.currentUser) {
+      this.props.router.push('/login');
+    }
+  }
+
   render () {
+
     return (
       <div>
         <header className='main-header'>
