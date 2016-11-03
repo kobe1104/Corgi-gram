@@ -1,6 +1,6 @@
 class Api::PhotosController < ApplicationController
   def create
-    @photo = Photo.new(author_id: current_user ,photo_params)
+    @photo = Photo.new(photo_params)
     if @photo.save
       render 'api/photos/show'
     else
@@ -8,7 +8,9 @@ class Api::PhotosController < ApplicationController
     end
   end
 
+
   def destroy
+
   end
 
   private
