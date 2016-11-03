@@ -31,7 +31,7 @@ class Main extends React.Component {
               }} />
           </div>
           <div className='header-user-group'>
-            <img className='user-heart' src='http://image.flaticon.com/icons/png/128/126/126471.png'/>
+            <img className='user-heart' src='https://image.flaticon.com/icons/png/128/126/126471.png'/>
             <br/>
             <img className='user-icon' src='https://image.freepik.com/free-icon/camera-portrait-mode_318-77219.jpg'
               onClick={() => this.props.router.push('/profile')}/>
