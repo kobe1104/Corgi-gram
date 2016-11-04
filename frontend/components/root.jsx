@@ -20,18 +20,22 @@ const Root = ({store}) => {
   const _redirectIfLoggedIn = (nextState, replace) => {
     const currentUser = store.getState().session.currentUser;
     if (currentUser) {
-      replace('/');
+      replace('/main');
     }
   };
   return (
     <Provider store={store}>
       <Router history={hashHistory}>
-        <Route path='/' component={App} >
-          <IndexRoute component={MainContainer} onEnter={_ensureLoggedIn} />
+        <Route path='/' component={App}>
+          <Route path='main' component={MainContainer} onEnter={_ensureLoggedIn}>
+            <IndexRoute component={PhotoContainer}/>
+            <Route path='profile' component={ProfileContainer}>
+              // user photos show here
+            </Route>
+          </Route>
 
           <Route path='login' component={LoginFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path='signup' component={SignupFormContainer} onEnter={_redirectIfLoggedIn} />
-          <Route path='profile' component={ProfileContainer} onEnter={_ensureLoggedIn} />
         </Route>
       </Router>
     </Provider>

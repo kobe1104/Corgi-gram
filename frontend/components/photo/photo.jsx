@@ -1,14 +1,23 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
 
+
 class Photo extends React.Component {
+
+
+  componentWillMount() {
+    this.props.fetchPhotos()
+  }
+
   render() {
     return (
       <div className='feed-container'>
-        <div className='photo1'>photo1</div>
-        <div className='photo2'>photo2</div>
-        <div className='photo3'>photo3</div>
-        <div className='photo4'>photo4</div>
+        <ul>
+          {this.props.photos.map((photo, i) => <li key={i}>
+            <img key={photo.photo_url} src={photo.photo_url}/>
+            <span key={photo.captions}>{photo.captions}</span>
+          </li>)}
+        </ul>
       </div>
     );
   }

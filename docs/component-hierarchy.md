@@ -32,9 +32,6 @@
   - Time
   - AddTag
 
-**AlbumContainer**
-  - Album
-
 **AboutContainer**
   - About
 

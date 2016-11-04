@@ -1,3 +1,32 @@
 // Place all the styles related to the api/photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.feed-container {
+  display: flex;
+  // display: block;
+  // border: 1px solid grey;
+  // color: white;
+  align-items: center;
+  // margin-left: 500px;
+}
+
+.feed-container li {
+  border: 2px solid grey;
+  margin-left: 350px;
+  margin-bottom: 50px;
+  list-style-type: none;
+  padding: 50px 300px 200px 50px;
+  background-color: white;
+}
+
+.feed-container span {
+  display: flex;
+  justify-content:flex-start;
+  margin-top: 40px;
+}
+
+.feed-container img {
+  width: 150%;
+  height: auto;
+}

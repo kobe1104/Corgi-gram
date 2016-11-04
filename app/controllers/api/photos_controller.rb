@@ -1,6 +1,14 @@
 class Api::PhotosController < ApplicationController
+  def show
+    @photo = Photo.find(params[:id])
+  end
+
+  def index
+    @photos = Photo.all
+  end
+
   def create
-    @photo = Photo.new(photo_params)
+    @photo = Photo.new(photo_params.merge(current_user))
     if @photo.save
       render 'api/photos/show'
     else
@@ -8,14 +16,22 @@ class Api::PhotosController < ApplicationController
     end
   end
 
+  def update
+  end
 
   def destroy
-
+    @photo = Photo.find(params[:id])
+    if @photo
+      @photo.destroy
+      render json: ['Photo removed!']
+    else
+      render json: ['Photo does not exist!']
+    end
   end
 
   private
 
   def photo_params
-    params.require(:photo).permit(:photo_url, :caption, :type)
+    params.require(:photos).permit(:photo_url, :caption)
   end
 end
