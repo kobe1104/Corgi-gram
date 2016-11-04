@@ -7,6 +7,8 @@ import SignupFormContainer from './session/signup_form_container';
 import MainContainer from './main/main_container';
 import ProfileContainer from './profile/profile_container';
 import PhotoContainer from './photo/photo_container';
+import EditContainer from './edit/edit_container';
+
 
 const Root = ({store}) => {
 
@@ -29,8 +31,8 @@ const Root = ({store}) => {
         <Route path='/' component={App}>
           <Route path='main' component={MainContainer} onEnter={_ensureLoggedIn}>
             <IndexRoute component={PhotoContainer}/>
+            <Route path='edit' component={EditContainer}/>
             <Route path='profile' component={ProfileContainer}>
-              <IndexRoute component={PhotoContainer}/>
             </Route>
           </Route>
 

@@ -1,0 +1,17 @@
+.edit-form-container {
+  border: 1px solid black;
+
+  flex-direction: column;
+}
+
+.edit-form {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.email-edit {
+  background-color: green;
+}

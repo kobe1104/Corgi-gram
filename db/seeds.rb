@@ -12,3 +12,9 @@ Photo.create(author_id: 1, photo_url: "http://i.imgur.com/xTcE7tU.gif", captions
 Photo.create(author_id: 1, photo_url: "http://i.imgur.com/DqZsTYl.jpg", captions: "Spring Corgi");
 Photo.create(author_id: 1, photo_url: "http://images.memes.com/meme/673847", captions: "Summer Corgi");
 Photo.create(author_id: 1, photo_url: "http://i.imgur.com/RtzLYg7.gif", captions: "Winter Corgi");
+
+Photo.create(author_id: 6, photo_url: "http://i.imgur.com/tWJb7xR.jpg", captions: "wink wink");
+Photo.create(author_id: 6, photo_url: "http://i.imgur.com/StZopHZ.jpg", captions: "wink wink");
+Photo.create(author_id: 6, photo_url: "https://s-media-cache-ak0.pinimg.com/236x/5e/0c/2a/5e0c2a140d421f0c4fa5f6194e92d97b.jpg", captions: "wink wink");
+Photo.create(author_id: 6, photo_url: "http://66.media.tumblr.com/85c2333d5cc16a5974824f57b9fef9f9/tumblr_mhd5de2Akh1s0ath6o1_1280.jpg", captions: "wink wink");
+Photo.create(author_id: 6, photo_url: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPhmHUu9Hb1fTb9AW1RZdezTIo6O6DVzXduBVXP5Q5YiYrpeupmA", captions: "wink wink");

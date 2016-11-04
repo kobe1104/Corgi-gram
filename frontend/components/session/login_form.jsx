@@ -48,7 +48,10 @@ class LoginForm extends React.Component {
 
   guestLogin(e) {
     e.preventDefault();
-    const user = {username: 'henry1', password: 'password'};
+    const user = {
+      username: 'Sir. Corgilim',
+      password: 'password'
+     };
     this.props.login({user});
   }
 
@@ -56,7 +59,6 @@ class LoginForm extends React.Component {
   render () {
     return  (
       <div className="login-form-container">
-          
           <img className='login-img' src="http://hdfreewallpaper.net/wp-content/uploads/2015/12/Cute-Pembroke-Welsh-Corgi-short-free-hd-wallappers.jpg"/>
         <form onSubmit={this.handleSubmit} className='login-form-box'>
           <div className='form-title'><span>Corgi</span>gram</div>
