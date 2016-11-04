@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.create(username: 'henry1', password: 'password', email: 'abc111@gmail');
-User.create(username: 'Sir. Corgilim', password: 'password', email: 'abc111@gmail');
+User.create(username: 'henry1', password: 'password', email: 'abc111@gmail', nickname: "just a lonely corgi");
+User.create(username: 'Sir. Corgilim', password: 'password', email: 'abc111@gmail', neckname: 'Guest', icon_url: "https://s-media-cache-ak0.pinimg.com/236x/e0/c8/d6/e0c8d67a12b3145f68a30605708f0991.jpg");
 
 
 Photo.create(author_id: 1, photo_url: "http://i.imgur.com/xTcE7tU.gif", captions: "Autumn Corgi");
