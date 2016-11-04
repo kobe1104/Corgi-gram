@@ -30,7 +30,7 @@ const Root = ({store}) => {
           <Route path='main' component={MainContainer} onEnter={_ensureLoggedIn}>
             <IndexRoute component={PhotoContainer}/>
             <Route path='profile' component={ProfileContainer}>
-              // user photos show here
+              <IndexRoute component={PhotoContainer}/>
             </Route>
           </Route>
 
