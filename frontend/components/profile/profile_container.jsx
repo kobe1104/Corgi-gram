@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Profile from './profile';
-import { fetchPhotos } from '../../actions/photo_actions';
+import { fetchPhotos, createPhoto } from '../../actions/photo_actions';
 
 const mapStateToProps = state => ({
   currentUser: state.session.currentUser,
@@ -8,7 +8,9 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchPhotos: () => dispatch(fetchPhotos())
+  fetchPhotos: () => dispatch(fetchPhotos()),
+  // dispatch uploaded photo
+  createPhoto: photo => dispatch(createPhoto(photo))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Profile);

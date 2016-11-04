@@ -11,6 +11,28 @@ class Profile extends React.Component {
   //
   // }
 
+  upload(e) {
+    e.preventDefault();
+    cloudinary.openUploadWidget(
+      window.cloudinary_options,
+      (error, photo) => {
+        if (error === null) {
+          this.uploadPhoto(photo[0].url);
+        }
+      }
+    )
+  }
+
+  uploadPhoto(url) {
+    const photo = {
+      author_id: this.currentUser.id,
+      photo_url: url,
+      captions: 'will get from a text input'
+    };
+    this.props.createPhoto(photo);
+  };
+
+
   render() {
     const userId = this.props.currentUser.id;
     const userPhotos = this.props.photos.filter(photo => photo.author_id === userId);
@@ -25,7 +47,8 @@ class Profile extends React.Component {
               <span className='profile-nickname'>{this.props.currentUser.nickname}</span>
             </div>
           </div>
-          <button onClick={() => this.props.router.push('main/edit')}>Edit Profile</button>
+          <button onClick={this.upload} className='profile-add-photo-button'>Add Photos</button>
+          <button className='profile-edit-button' onClick={() => this.props.router.push('main/edit')}>Edit Profile</button>
             {userPhotos.map((photo, i) => <li key={i}>
               <img key={photo.photo_url} src={photo.photo_url}/>
             </li>)}
