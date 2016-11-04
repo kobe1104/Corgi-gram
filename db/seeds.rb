@@ -7,6 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.create(username: 'henry1', password: 'password', email: 'abc111@gmail');
+User.create(username: 'Sir. Corgilim', password: 'password', email: 'abc111@gmail');
+
 
 Photo.create(author_id: 1, photo_url: "http://i.imgur.com/xTcE7tU.gif", captions: "Autumn Corgi");
 Photo.create(author_id: 1, photo_url: "http://i.imgur.com/DqZsTYl.jpg", captions: "Spring Corgi");
