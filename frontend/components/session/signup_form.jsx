@@ -55,12 +55,9 @@ class SignupForm extends React.Component {
   render () {
     return  (
       <div className="signup-form-container">
-        <div className='auth-img'>
-          <img src="https://s-media-cache-ak0.pinimg.com/736x/b0/00/17/b0001726dc9b455618abb4e6ff824305.jpg"/>
-        </div>
+        <img className='signup-form-img' src="https://wallpaperscraft.com/image/welsh_corgi_dog_view_grass_105205_1920x1080.jpg"/>
         <form onSubmit={this.handleSubmit} className='signup-form-box'>
           <div className='form-title'><span>Corgi</span>gram</div>
-
           <br/>
           {this.renderErrors()}
           <div className='signup-form'>
@@ -91,7 +88,7 @@ class SignupForm extends React.Component {
             <br/>
             <input className='signup-button' type='submit' value='Sign Up!!' />
           </div>
-          <div className='auth-form-or'><span>Or</span></div>
+          <div className='auth-form-or'></div>
           <br/>
           <button className='login_link' onClick={() => this.props.router.push('/login')}>Log In</button>
           <br/>
