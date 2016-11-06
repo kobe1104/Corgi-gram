@@ -13,12 +13,10 @@ class Photo extends React.Component {
   }
 
   render() {
-    debugger
     const userId = this.props.currentUser.id;
     const photoFeed = this.props.photos.filter(photo => photo.author_id !== userId)
     return (
       <div className='feed-container'>
-        <div>{photoFeed[0].authord_id}</div>
         <ul>
           {photoFeed.map((photo, i) => <li key={i}>
             <img key={photo.photo_url} src={photo.photo_url}/>
