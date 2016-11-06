@@ -16,13 +16,21 @@
   margin-right: 100px;
 }
 
+.wing-icon {
+  height: 40px;
+  width: auto;
+  padding-right: 10px;
+}
+
 .user-icon {
   height: 30px;
   width: auto;
   padding: 0px 10px;
+  margin-top: 5px;
 }
 
 .user-heart {
+  margin-top: 5px;
   height: 30px;
   width: auto;
   padding: 0px 10px;
@@ -46,25 +54,15 @@
 }
 
 
-// Footer
+.search-bar {
 
-.main-footer {
-  display:flex;
   justify-content: center;
-
+  display: flex;
+  margin-top: 15px;
 }
 
-.footer-about {
-  padding: 0px 20px;
-}
 
-.footer-github {
-  padding: 0px 20px;
-}
 
-.footer-linkedin {
-  padding: 0px 20px;
-}
 
 .main-logout-button {
    background-color: #4CAF50; /* Green */
