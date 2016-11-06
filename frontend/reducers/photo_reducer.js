@@ -9,6 +9,7 @@ const default_state = Object.freeze({
 });
 
 const PhotoReducer = (state = default_state, action) => {
+  Object.freeze(state);
   switch (action.type) {
     case RECEIVE_ALL_PHOTOS:
       return merge({}, action.photos);

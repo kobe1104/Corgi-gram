@@ -8,7 +8,7 @@ class Api::PhotosController < ApplicationController
   end
 
   def create
-    @photo = Photo.new(photo_params.merge(current_user))
+    @photo = Photo.new({author_id: current_user.id}, photo_params)
     if @photo.save
       render 'api/photos/show'
     else
@@ -32,6 +32,6 @@ class Api::PhotosController < ApplicationController
   private
 
   def photo_params
-    params.require(:photos).permit(:photo_url, :caption)
+    params.require(:photo).permit(:photo_url, :captions)
   end
 end

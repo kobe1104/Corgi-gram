@@ -3,17 +3,24 @@ import { Link, withRouter } from 'react-router';
 
 
 class Photo extends React.Component {
-
+  constructor(props) {
+    super(props);
+  }
 
   componentWillMount() {
-    this.props.fetchPhotos()
+    this.props.fetchPhotos();
+    this.props.fetchComments()
   }
 
   render() {
+    debugger
+    const userId = this.props.currentUser.id;
+    const photoFeed = this.props.photos.filter(photo => photo.author_id !== userId)
     return (
       <div className='feed-container'>
+        <div>{photoFeed[0].authord_id}</div>
         <ul>
-          {this.props.photos.map((photo, i) => <li key={i}>
+          {photoFeed.map((photo, i) => <li key={i}>
             <img key={photo.photo_url} src={photo.photo_url}/>
             <span key={photo.captions}>{photo.captions}</span>
           </li>)}

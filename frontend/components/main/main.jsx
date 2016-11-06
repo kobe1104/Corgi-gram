@@ -23,7 +23,7 @@ class Main extends React.Component {
             <br/>
             <div className='header-partition'/>
             <br/>
-            <div className='main-title'><span>Corgi</span>gram</div>
+            <div className='main-title' onClick={() => this.props.router.push('/main')}><span>Corgi</span>gram</div>
             <br/>
           </div>
           <div className='search-bar'>

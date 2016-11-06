@@ -22,6 +22,7 @@ const PhotoMiddleware = ({ getState, dispatch }) => next => action => {
   const receiveAllPhotosSuccess = photos => dispatch(receiveAllPhotos(photos));
   const receivePhotoSuccess = photo => dispatch(receivePhoto(photo));
   const removePhotoSuccess = photo => dispatch(removePhoto(photo));
+  const getErrors = errors => dispatch(console.log(errors));
   switch (action.type) {
     case FETCH_PHOTOS:
       fetchPhotos(receiveAllPhotosSuccess);

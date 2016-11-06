@@ -1,34 +1,30 @@
-export const fetchPhotos = (success, error) => {
+export const fetchPhotos = (success) => {
   $.ajax({
     url: `api/photos`,
-    success,
-    error
+    success
   })
 };
 
-export const fetchPhoto = (id, success, error) => {
+export const fetchPhoto = (id, success) => {
   $.ajax({
     url: `api/photos/${id}`,
-    success,
-    error
+    success
   })
 }
 
-export const createPhoto = (photo, success, error) => {
+export const createPhoto = (photo, success) => {
   $.ajax({
     method: "POST",
     url: `api/photos`,
     data: photo,
-    success,
-    error
+    success
   })
 }
 
-export const deletePhoto = (id, success, error) => {
+export const deletePhoto = (id, success) => {
   $.ajax({
     method: 'DELETE',
     url: `api/photos/${id}`,
-    success,
-    error
+    success
   })
 }
