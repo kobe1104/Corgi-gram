@@ -22,11 +22,20 @@
   padding-right: 10px;
 }
 
+.wing-icon:hover {
+  cursor: pointer;
+  color: red;
+}
+
 .user-icon {
   height: 30px;
   width: auto;
   padding: 0px 10px;
   margin-top: 5px;
+}
+
+.user-icon:hover {
+  cursor: pointer;
 }
 
 .user-heart {
@@ -36,11 +45,19 @@
   padding: 0px 10px;
 }
 
+.user-heart:hover {
+  cursor: pointer;
+}
+
 .corgi-icon {
   height: 80px;
   width: auto;
   margin-left: 100px;
   padding: 0px 10px;
+}
+
+.corgi-icon:hover {
+  cursor: pointer;
 }
 
 .user-logout {
@@ -50,10 +67,18 @@
   padding: 0px 10px;
 }
 
+.user-logout:hover {
+  cursor: pointer;
+}
+
 .main-title {
   font-family: 'Indie Flower', cursive;
   margin-top: 15px;
   font-size: 30px;
+}
+
+.main-title:hover {
+  cursor: pointer;
 }
 
 .main-title span {

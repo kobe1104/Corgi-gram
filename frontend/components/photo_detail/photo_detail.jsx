@@ -6,20 +6,22 @@ class PhotoDetail extends React.Component {
     super(props);
   }
 
-  componentWillMount() {
-    const photoId = Number(this.props.params.id);
-  }
 
-  componentDidMount() {
+  componentWillMount() {
     const photoId = Number(this.props.params.id);
     this.props.fetchPhoto(photoId);
   }
 
+
   render() {
     // debugger
-    return(
+    const photo = this.props.photo;
+    return (
       <div className= 'photo-detail-container'>
-        <img />
+        <img src={photo.photo_url}/>
+        <ul>
+
+        </ul>
       </div>
     );
   }

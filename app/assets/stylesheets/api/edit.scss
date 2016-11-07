@@ -1,17 +1,81 @@
-.edit-form-container {
-  border: 1px solid black;
-
-  flex-direction: column;
-}
-
 .edit-form {
-  border: 1px solid red;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  
+  padding: 40px 20px 70px 20px;
+  border-radius: 10px;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
 }
 
-.email-edit {
-  background-color: green;
+.edit-form-user {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.edit-profile-icon {
+  height:100px;
+  width: auto;
+}
+
+.edit-profile-username {
+  padding-left: 20px;
+}
+
+.edit-form-container {
+  display: relative;
+  justify-content: center;
+  // margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.edit-form label {
+  padding: 10px 0px;
+}
+
+.username-edit input {
+  margin-left: 10px;
+}
+.nickname-edit input {
+  margin-left: 13px;
+}
+.email-edit input {
+  margin-left: 56px;
+  margin-bottom: 30px;
+}
+
+.edit-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-submit-button {
+  width: 100px;
+  // margin-left: 100px;
+  // margin-top: 20px;
+  font-size: 15px;
+  // border: none;
+  // background-color: #d6d6d6;
+}
+
+.edit-submit-button:hover {
+  cursor:pointer;
+  background-color: #ffda21;
+  border: none;
+  border-radius: 5px;
+}
+
+.edit-cancel {
+  width: 100px;
+  // font-size: 13px;
+}
+
+.edit-cancel:hover {
+  cursor: pointer;
+  background-color: #ffda21;
+  border: none;
+  border-radius: 5px;
 }

@@ -16,7 +16,7 @@ export const createPhoto = (photo, success) => {
   $.ajax({
     method: "POST",
     url: `api/photos`,
-    data: photo,
+    data: {photo: photo},
     success
   })
 }

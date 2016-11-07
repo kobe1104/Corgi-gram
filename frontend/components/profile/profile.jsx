@@ -60,9 +60,16 @@ class Profile extends React.Component {
             <div className='profile-info'>
               <h2 className='profile-username'>{this.props.currentUser.username}</h2>
               <span className='profile-nickname'>{this.props.currentUser.nickname}</span>
+              <div className='profile-likes-follows'>
+                <span>231 posts</span>
+                <span>577 followers</span>
+                <span>369 following</span>
+              </div>
             </div>
-            <button className='profile-edit-button' onClick={() => this.props.router.push('main/edit')}>Edit Profile</button>
-            <button className='profile-add-photo-button' onClick={this.testUpload}>Add Photos</button>
+            <div className= 'profile-buttons'>
+              <button className='profile-edit-button' onClick={() => this.props.router.push('main/edit')}>Edit Profile</button>
+              <button className='profile-add-photo-button' onClick={this.testUpload}>Add Photo</button>
+            </div>
           </div>
           <ul className='profile-photos'>
             {userPhotos.map((photo, i) => <li key={i}>

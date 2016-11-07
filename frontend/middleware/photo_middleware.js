@@ -18,6 +18,7 @@ import {
 
 
 window.FETCH_PHOTOS = FETCH_PHOTOS;
+// debugger
 const PhotoMiddleware = ({ getState, dispatch }) => next => action => {
   const receiveAllPhotosSuccess = photos => dispatch(receiveAllPhotos(photos));
   const receivePhotoSuccess = photo => dispatch(receivePhoto(photo));

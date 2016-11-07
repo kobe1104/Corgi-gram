@@ -9,6 +9,7 @@ const default_state = Object.freeze({
 });
 
 const PhotoReducer = (state = {}, action) => {
+  // debugger
   Object.freeze(state);
   let newState = merge({}, state);
   switch (action.type) {

@@ -6,18 +6,47 @@
 .profile-box {
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 
 .profile-icon {
   color: white;
 }
 
-.profile-edit-button {
-
+.profile-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 70px;
 }
 
-.profile-add-photo-button{
 
+.profile-edit-button {
+  height: 40px;
+  width: 100px;
+  margin-bottom: 20px;
+  font-family: 'Itim', cursive;
+  font-size: 16px;
+  color: black;
+  // background-color: #ffda21;
+}
+
+.profile-edit-button:hover {
+  background-color: #ffda21;
+  cursor: pointer;
+}
+
+.profile-add-photo-button {
+  height: 40px;
+  width: 100px;
+  // background-color: #ffda21;
+  font-family: 'Itim', cursive;
+  font-size: 16px;
+}
+
+.profile-add-photo-button:hover {
+  background-color: #ffda21;
+  cursor: pointer;
 }
 
 .profile-photos {
@@ -31,4 +60,25 @@
   height: 295px;
   width: 295px;
   padding: 13px;
+}
+
+.profile-username {
+  padding-left: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+.profile-nickname {
+  padding-left: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+.profile-likes-follows {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  font-family: 'Lato', sans-serif;
+}
+
+.profile-likes-follows span{
+  padding: 0px 10px;
 }
