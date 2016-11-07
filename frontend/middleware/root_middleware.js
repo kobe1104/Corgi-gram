@@ -4,7 +4,7 @@ import PhotoMiddleware from './photo_middleware';
 import CommentMiddleware from './comment_middleware';
 
 const RootMiddleware = applyMiddleware(
-  CommentMiddleware,
+  // CommentMiddleware,
   SessionMiddleware,
   PhotoMiddleware);
 export default RootMiddleware;

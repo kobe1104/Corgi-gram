@@ -37,10 +37,11 @@ class Main extends React.Component {
             <br/>
             <img className='user-heart' src='http://image.flaticon.com/icons/png/128/126/126471.png'/>
             <br/>
-            <img className='user-icon' src='https://cdn1.iconfinder.com/data/icons/photography-outline-2/512/oYPS__human_avatar_portrait_photography_picture_photo-512.png'
+            <img className='user-icon' src='https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-256.png'
               onClick={() => this.props.router.push('main/profile')}/>
             <br/>
-            <button className='main-logout-button' onClick={this.props.logout}>Log out</button>
+            <img className='user-logout' onClick={this.props.logout} src="http://image.flaticon.com/icons/png/128/53/53113.png"/>
+
           </div>
         </header>
         {this.props.children}

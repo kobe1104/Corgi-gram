@@ -6,7 +6,6 @@ import { fetchComments } from '../../actions/comment_actions';
 const mapStateToProps = state => ({
   currentUser: state.session.currentUser,
   photos: Object.keys(state.photo).map(id => state.photo[id]),
-  comments: state.comment
 });
 
 const mapDispatchToProps = dispatch => ({

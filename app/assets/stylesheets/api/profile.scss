@@ -1,0 +1,34 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-box {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-icon {
+  color: white;
+}
+
+.profile-edit-button {
+
+}
+
+.profile-add-photo-button{
+
+}
+
+.profile-photos {
+  list-style-type: none;
+  display: flex;
+  padding: 20px 200px;
+
+}
+
+.profile-photos li img {
+  height: 295px;
+  width: 295px;
+  padding: 13px;
+}

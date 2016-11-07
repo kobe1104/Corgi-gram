@@ -6,6 +6,7 @@ class SignupForm extends React.Component {
     super(props);
     this.state = {username: '', password: '', email: ''};
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.guestLogin = this.guestLogin.bind(this);
   }
 
   componentDidUpdate() {
@@ -46,7 +47,10 @@ class SignupForm extends React.Component {
 
   guestLogin(e) {
     e.preventDefault();
-    const user = {username: 'henry1', password: 'password'};
+    const user = {
+      username: 'Sir. Corgilim',
+      password: 'password'
+     };
     this.props.login({user});
   }
 

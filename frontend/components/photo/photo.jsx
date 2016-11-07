@@ -9,12 +9,13 @@ class Photo extends React.Component {
 
   componentWillMount() {
     this.props.fetchPhotos();
-    this.props.fetchComments()
+    this.props.fetchComments();
   }
 
   render() {
     const userId = this.props.currentUser.id;
-    const photoFeed = this.props.photos.filter(photo => photo.author_id !== userId)
+    const photoFeed = this.props.photos.filter(
+      photo => photo.author_id !== userId);
     return (
       <div className='feed-container'>
         <ul>

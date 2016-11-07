@@ -8,3 +8,5 @@ const Comments = () => (
     </ul>
   );
 )
+
+export default withRouter(Comments);
