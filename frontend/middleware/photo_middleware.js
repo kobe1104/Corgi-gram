@@ -5,7 +5,8 @@ import {
   FETCH_PHOTOS,
   FETCH_PHOTO,
   CREATE_PHOTO,
-  DELETE_PHOTO
+  DELETE_PHOTO,
+  UPDATE_PHOTO
 
 } from '../actions/photo_actions';
 
@@ -13,7 +14,8 @@ import {
   fetchPhotos,
   fetchPhoto,
   createPhoto,
-  deletePhoto
+  deletePhoto,
+  updatePhoto
 } from '../util/photo_api_util';
 
 
@@ -24,6 +26,8 @@ const PhotoMiddleware = ({ getState, dispatch }) => next => action => {
   const receivePhotoSuccess = photo => dispatch(receivePhoto(photo));
   const removePhotoSuccess = photo => dispatch(removePhoto(photo));
   const getErrors = errors => dispatch(console.log(errors));
+  const updateSuccess = photo => dispatch(updatePhoto(photo));
+
   switch (action.type) {
     case FETCH_PHOTOS:
       fetchPhotos(receiveAllPhotosSuccess);
@@ -35,8 +39,10 @@ const PhotoMiddleware = ({ getState, dispatch }) => next => action => {
       createPhoto(action.photo, receivePhotoSuccess);
       return next(action);
     case DELETE_PHOTO:
-      deletePhoto(action.id, removePhotoSuccess)
+      deletePhoto(action.id, removePhotoSuccess);
       return next(action);
+    case UPDATE_PHOTO:
+      updatePhoto(action.photo, updateSuccess);
     default:
       return next(action);
   }

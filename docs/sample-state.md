@@ -27,9 +27,6 @@
         2: {id: 2, author_id: 7}
       }
     }  
-  },
-  comments: {
-    
   }
 }
 ```

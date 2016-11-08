@@ -5,6 +5,7 @@ export const FETCH_PHOTO = "FETCH_PHOTO";
 export const CREATE_PHOTO = "CREATE_PHOTO";
 export const DELETE_PHOTO = "DELETE_PHOTO";
 export const REMOVE_PHOTO = "REMOVE_PHOTO";
+export const UPDATE_PHOTO = "UPDATE_PHOTO";
 
 
 export const receiveAllPhotos = (photos) => ({
@@ -40,3 +41,8 @@ export const removePhoto = (photo) => ({
   type: REMOVE_PHOTO,
   photo
 });
+
+export const updatePhoto = (photo) => ({
+  type: UPDATE_PHOTO,
+  photo
+})

@@ -21,6 +21,7 @@ class PhotoDetail extends React.Component {
     return (
       <div className= 'photo-detail-container'>
         <img src={photo.photo_url}/>
+        <h5 className='photo-detail-captions'>{photo.captions}</h5>
         <ul>
           {this.props.comments.map(
             (comment, i) => <li key={i}>{comment.author_id}: {comment.body}</li>)}

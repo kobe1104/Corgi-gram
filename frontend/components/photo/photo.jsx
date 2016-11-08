@@ -20,8 +20,13 @@ class Photo extends React.Component {
       <div className='feed-container'>
         <ul>
           {photoFeed.map((photo, i) => <li key={i}>
-            <img key={photo.photo_url} src={photo.photo_url}/>
-            <span key={photo.captions}>{photo.captions}</span>
+            <img className='feed-photo' key={photo.photo_url} src={photo.photo_url}/>
+            <span className='feed-comment' key={photo.captions}>{photo.captions}</span>
+            <div className='feed-line'></div>
+            <div className='feed-comment-like'>
+              <img className='feed-like-icon' src='http://image.flaticon.com/icons/png/128/126/126471.png'/>
+              <input type='text'placeholder='Add a comment...'/>
+            </div>
           </li>)}
         </ul>
       </div>
