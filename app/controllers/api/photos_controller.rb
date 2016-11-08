@@ -3,6 +3,9 @@ class Api::PhotosController < ApplicationController
     @photo = Photo.find(params[:id])
     if @photo
       @comment = @photo.comments;
+      # if @comment
+      #   @user = @comment.user
+      # end
     end
 
   end
@@ -13,7 +16,7 @@ class Api::PhotosController < ApplicationController
   end
 
   def create
-    @photo = Photo.new({author_id: current_user.id}, photo_params)
+    @photo = Photo.new(author_id: current_user.id, photo_url: photo_params[:photo_url], captions: photo_params[:captions])
     if @photo.save
       render 'api/photos/show'
     else

@@ -5,42 +5,44 @@ class Profile extends React.Component {
 
   constructor(props) {
     super(props);
-    // this.upload = this.upload.bind(this)
+    this.upload = this.upload.bind(this);
+    this.uploadPhoto = this.uploadPhoto.bind(this);
     this.testUpload = this.testUpload.bind(this);
   }
 
   componentWillMount() {
+    debugger
     this.props.fetchPhotos();
   }
   // user photos are not rednering until refresh
-  // componentDidMount() {
-  //
-  // }
 
-  // upload(e) {
-  //   debugger
-  //   const that = this;
-  //   e.preventDefault();
-  //   cloudinary.openUploadWidget(
-  //     window.cloudinary_options,
-  //     (error, photo) => {
-  //       if (error === null) {
-  //         that.uploadPhoto(photo[0].url);
-  //       }
-  //     }
-  //   )
-  // }
 
-  // uploadPhoto(url) {
-  //   const photo = {
-  //     author_id: this.currentUser.id,
-  //     photo_url: url,
-  //     captions: 'will get from a text input'
-  //   };
-  //   this.props.createPhoto(photo);
-  // };
+  upload(e) {
+    // debugger
+    // const that = this;
+    e.preventDefault();
+    cloudinary.openUploadWidget(
+      window.cloudinary_options,
+      (error, photo) => {
+        if (error === null) {
+          this.uploadPhoto(photo[0].url);
+        }
+      }
+    )
+  }
 
-  testUpload() {
+  uploadPhoto(url) {
+
+    const photo = {
+      author_id: this.props.currentUser.id,
+      photo_url: url,
+      captions: 'will get from a text input'
+    };
+    this.props.createPhoto(photo);
+  };
+
+  testUpload(e) {
+    e.preventDefault();
     const pic = {
       author_id: 6,
       photo_url: "http://thedailycorgi.com/wp-content/uploads/2016/07/corgban.jpg",
@@ -68,13 +70,17 @@ class Profile extends React.Component {
             </div>
             <div className= 'profile-buttons'>
               <button className='profile-edit-button' onClick={() => this.props.router.push('main/edit')}>Edit Profile</button>
-              <button className='profile-add-photo-button' onClick={this.testUpload}>Add Photo</button>
+              <button className='profile-add-photo-button' onClick={this.upload}>Add Photo</button>
             </div>
           </div>
           <ul className='profile-photos'>
-            {userPhotos.map((photo, i) => <li key={i}>
-            <img key={photo.photo_url} src={photo.photo_url}/>
-          </li>)}
+            {
+              userPhotos.map((photo, i) => (
+                <li key={i}>
+                  <img onClick={() => this.props.router.push(`main/photo-detail/${photo.id}`)} key={photo.photo_url} src={photo.photo_url}/>
+                  <button>Detail</button>
+                </li>))
+            }
           {this.props.children}
           </ul>
         </div>

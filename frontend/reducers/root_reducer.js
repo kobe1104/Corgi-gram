@@ -7,5 +7,6 @@ const RootReducer = combineReducers({
   session: SessionReducer,
   // comment: CommentReducer,
   photo: PhotoReducer});
+  // rename to photos
 
 export default RootReducer;

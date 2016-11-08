@@ -7,4 +7,6 @@
 
 <!-- questions -->
 1. User photos don't show without refreshing.
-2. somehow photo details comments cannot be render.
+2. how to include author username in comment?
+3. ajax create photo request not creating photo.
+4. how to interpolate in router.push(/id)?

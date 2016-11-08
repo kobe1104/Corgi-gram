@@ -5,8 +5,10 @@ const default_state = Object.freeze({
   author_id: -1,
   photo_url: "",
   captions: "",
-  type: ""
-});
+  comments: {author_id: -1, body: ""}
+})
+
+// how to put default comment in default photo?
 
 const PhotoReducer = (state = {}, action) => {
   // debugger

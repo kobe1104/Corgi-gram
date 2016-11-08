@@ -13,14 +13,17 @@ class PhotoDetail extends React.Component {
   }
 
 
+
   render() {
     // debugger
+
     const photo = this.props.photo;
     return (
       <div className= 'photo-detail-container'>
         <img src={photo.photo_url}/>
         <ul>
-
+          {this.props.comments.map(
+            (comment, i) => <li key={i}>{comment.author_id}: {comment.body}</li>)}
         </ul>
       </div>
     );

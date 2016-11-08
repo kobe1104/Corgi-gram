@@ -2,10 +2,12 @@ import { connect } from 'react-redux';
 import Profile from './profile';
 import { fetchPhotos, createPhoto } from '../../actions/photo_actions';
 
-const mapStateToProps = state => ({
-  currentUser: state.session.currentUser,
-  photos: Object.keys(state.photo).map(id => state.photo[id])
-});
+const mapStateToProps = (state, ownProps) => {
+  return({
+    currentUser: state.session.currentUser,
+    photos: Object.keys(state.photo).map(id => state.photo[id])
+  });
+};
 
 const mapDispatchToProps = dispatch => ({
   fetchPhotos: () => dispatch(fetchPhotos()),

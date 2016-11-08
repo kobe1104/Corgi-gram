@@ -1,23 +1,15 @@
 import { connect } from 'react-redux';
 import PhotoDetail from './photo_detail';
 import { fetchPhoto } from '../../actions/photo_actions';
-
+import {commentsSelector} from '../../reducers/selectors';
 
 const mapStateToProps = (state, {params}) => {
-  if(state.photo[Number(params.id)]){
-    // debugger
-    return ({
-      currentUser: state.session.currentUser,
-      photo: state.photo[Number(params.id)],
-      comments: Object.keys(state.photo[Number(params.id)].comments).map(
-        cid => state.photo[Number(params.id)].comments[cid]
-      )
-    });
-  } else {
-    return({
-      photo: {}
-    });
-  }
+  debugger
+  return({
+    currentUser: state.session.currentUser,
+    photo: state.photo[Number(params.id)] || {},
+    comments: commentsSelector(state, params.id)
+  });
 
 };
 
