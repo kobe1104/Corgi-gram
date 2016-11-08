@@ -25,7 +25,7 @@ class Profile extends React.Component {
       window.cloudinary_options,
       (error, photo) => {
         if (error === null) {
-          this.uploadPhoto(photo[0].url);
+          this.uploadPhoto(photo[0].secure_url);
         }
       }
     )
