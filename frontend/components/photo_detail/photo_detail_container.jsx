@@ -4,7 +4,6 @@ import { fetchPhoto } from '../../actions/photo_actions';
 import {commentsSelector} from '../../reducers/selectors';
 
 const mapStateToProps = (state, {params}) => {
-  debugger
   return({
     currentUser: state.session.currentUser,
     photo: state.photo[Number(params.id)] || {},

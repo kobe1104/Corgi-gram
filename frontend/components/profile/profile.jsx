@@ -11,7 +11,6 @@ class Profile extends React.Component {
   }
 
   componentWillMount() {
-    debugger
     this.props.fetchPhotos();
   }
   // user photos are not rednering until refresh
@@ -53,8 +52,6 @@ class Profile extends React.Component {
 
 
   render() {
-    const userId = this.props.currentUser.id;
-    const userPhotos = this.props.photos.filter(photo => photo.author_id === userId);
     return(
         <div className='profile-container'>
           <div className='profile-box'>
@@ -69,16 +66,19 @@ class Profile extends React.Component {
               </div>
             </div>
             <div className= 'profile-buttons'>
-              <button className='profile-edit-button' onClick={() => this.props.router.push('main/edit')}>Edit Profile</button>
-              <button className='profile-add-photo-button' onClick={this.upload}>Add Photo</button>
+              <button className='profile-edit-button' onClick={() =>
+                   this.props.router.push('main/edit')}>Edit Profile</button>
+              <button className='profile-add-photo-button'
+                onClick={this.upload}>Add Photo</button>
             </div>
           </div>
           <ul className='profile-photos'>
             {
-              userPhotos.map((photo, i) => (
+              this.props.photos.map((photo, i) => (
                 <li key={i}>
-                  <img onClick={() => this.props.router.push(`main/photo-detail/${photo.id}`)} key={photo.photo_url} src={photo.photo_url}/>
-                  <button>Detail</button>
+                  <img onClick={() =>
+                      this.props.router.push(`main/photo-detail/${photo.id}`)}
+                     key={photo.photo_url} src={photo.photo_url}/>
                 </li>))
             }
           {this.props.children}
