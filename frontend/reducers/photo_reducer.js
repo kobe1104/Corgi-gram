@@ -1,5 +1,6 @@
 import { RECEIVE_ALL_PHOTOS, RECEIVE_PHOTO } from '../actions/photo_actions';
 import { RECEIVE_LIKE, REMOVE_LIKE } from '../actions/like_actions';
+import { RECEIVE_COMMENT } from '../actions/comment_actions';
 import { merge } from 'lodash';
 
 const default_state = Object.freeze({
@@ -30,7 +31,11 @@ const PhotoReducer = (state = {}, action) => {
       newPhoto1.likes = newPhoto1.likes.filter(like => like.photo_id !== action.like.photo_id).slice(0);
       newState1[newPhoto1.id] =  newPhoto1;
       return newState1;
-
+    case RECEIVE_COMMENT:
+      
+      let newPhoto2 = merge({}, state[action.comment.photo_id]);
+      newPhoto2.comments.push(action.comment);
+      return merge({}, state, {[newPhoto2.id]: newPhoto2});
     default:
       return state;
   }

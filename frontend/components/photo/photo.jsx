@@ -6,6 +6,7 @@ class Photo extends React.Component {
   constructor(props) {
     super(props);
     this.iconUrl = this.iconUrl.bind(this);
+    this.submitHandler = this.submitHandler.bind(this);
     this.state = {comment: {}}
   }
 
@@ -75,11 +76,12 @@ class Photo extends React.Component {
               <img className='feed-like-icon'
                 onClick={this.toggleLike.bind(this, photo)}
                 src={this.iconUrl(photo.id)} />
-              <form onSubmit={this.submitHandler}>
+              <form className='feed-comment-form' onSubmit={this.submitHandler}>
                 <input type='text'
                   onChange={this.update(photo)}
-                  placeholder='Add a comment...'/>
-                <input type='submit' value='Submit'/>
+                  placeholder='Add a comment...'
+                  />
+                <input className='feed-comment-submit' type='submit' value='Submit'/>
               </form>
             </div>
           </li>)}
