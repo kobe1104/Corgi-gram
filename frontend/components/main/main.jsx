@@ -12,6 +12,14 @@ class Main extends React.Component {
     }
   }
 
+  changeImg() {
+    if (document.getElementsByClassName('user-heart').src === "https://freeiconshop.com/files/edd/heart-outline.png") {
+      document.getElementsByClassName('user-heart').src = "http://iconshow.me/media/images/ui/ios7-icons/png/512/heart_1.png"
+    } else {
+      document.getElementsByClassName('user-heart').src = "https://freeiconshop.com/files/edd/heart-outline.png"
+    }
+  }
+
   render () {
 
     return (
@@ -35,7 +43,7 @@ class Main extends React.Component {
             <img className='wing-icon' src="https://cdn.vectorstock.com/i/thumb-large/03/70/10190370.jpg"
               onClick={() => this.props.router.push('main/about')}/>
             <br/>
-            <img className='user-heart' src='http://image.flaticon.com/icons/png/128/126/126471.png'/>
+            <img className='user-heart' src='https://freeiconshop.com/files/edd/heart-outline.png'/>
             <br/>
             <img className='user-icon' src='https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-256.png'
               onClick={() => this.props.router.push('main/profile')}/>

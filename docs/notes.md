@@ -8,3 +8,6 @@
 <!-- questions -->
 1. User photos are not showing on heroku, (mixed content error).
 2. how to include author username in comment?
+
+Likes:
+  need to add current user likes to database.

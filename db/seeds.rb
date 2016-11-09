@@ -27,3 +27,8 @@ Comment.create(author_id: 6, photo_id: 11, body: "I love spring so much")
 Comment.create(author_id: 6, photo_id: 11, body: "ok I really love spring")
 Comment.create(author_id: 6, photo_id: 12, body: "I love summer")
 Comment.create(author_id: 6, photo_id: 13, body: "I love winter")
+
+Like.create(author_id: 2, photo_id: 10);
+Like.create(author_id: 3, photo_id: 10);
+Like.create(author_id: 4, photo_id: 10);
+Like.create(author_id: 5, photo_id: 10);

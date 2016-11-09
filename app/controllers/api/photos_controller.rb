@@ -1,18 +1,12 @@
 class Api::PhotosController < ApplicationController
   def show
     @photo = Photo.find(params[:id])
-    if @photo
-      @comment = @photo.comments;
-      # if @comment
-      #   @user = @comment.user
-      # end
-    end
-
   end
 
   def index
     @photos = Photo.all
     @photos.includes(:comments)
+    @photos.includes(:likes)
   end
 
   def create

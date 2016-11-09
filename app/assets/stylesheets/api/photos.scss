@@ -20,10 +20,16 @@
   background-color: white;
 }
 
+.fedd-number-likes {
+  font-family: 'Itim', cursive;
+  margin-left: 20px;
+}
+
 .feed-container span {
   display: flex;
   justify-content:flex-start;
-  margin-top: 40px;
+  font-family: 'Itim', cursive;
+  margin-top: 30px;
   margin-left: 20px;
 }
 
@@ -56,4 +62,17 @@
   border: none;
   font-size: 17px;
   margin-bottom: 2px;
+}
+
+.feed-comments {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed-comments li {
+  border: none;
+  font-size: 15px;
+  display: flex;
+  padding: 0px 0px 0px 0px;
+  margin-bottom: 0px;
 }

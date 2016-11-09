@@ -3,4 +3,8 @@ class Photo < ActiveRecord::Base
   validates :photo_url, uniqueness: true
   belongs_to :user
   has_many :comments
+  has_many :likes,
+   class_name: "Like",
+   foreign_key: :photo_id,
+   primary_key: :id
 end

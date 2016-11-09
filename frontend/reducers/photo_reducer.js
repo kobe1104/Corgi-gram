@@ -1,4 +1,5 @@
 import { RECEIVE_ALL_PHOTOS, RECEIVE_PHOTO } from '../actions/photo_actions';
+import { RECEIVE_LIKE, REMOVE_LIKE } from '../actions/like_actions';
 import { merge } from 'lodash';
 
 const default_state = Object.freeze({
@@ -19,6 +20,12 @@ const PhotoReducer = (state = {}, action) => {
       return merge({}, action.photos);
     case RECEIVE_PHOTO:
       return merge({}, state, {[action.photo.id]: action.photo});
+    case RECEIVE_LIKE:
+      let newPhoto = merge({}, state[action.like.photo_id]);
+      newPhoto.likes.push(action.like);
+      return merge({}, state, {[newPhoto.id]: newPhoto});
+  
+
     default:
       return state;
   }

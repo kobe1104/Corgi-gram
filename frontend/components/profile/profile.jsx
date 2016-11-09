@@ -52,6 +52,7 @@ class Profile extends React.Component {
 
 
   render() {
+
     return(
         <div className='profile-container'>
           <div className='profile-box'>
@@ -60,7 +61,7 @@ class Profile extends React.Component {
               <h2 className='profile-username'>{this.props.currentUser.username}</h2>
               <span className='profile-nickname'>{this.props.currentUser.nickname}</span>
               <div className='profile-likes-follows'>
-                <span>231 posts</span>
+                <span>{this.props.photos.length} posts</span>
                 <span>577 followers</span>
                 <span>369 following</span>
               </div>

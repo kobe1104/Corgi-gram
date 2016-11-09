@@ -9,3 +9,10 @@ json.comments do
     end
   end
 end
+
+# likes: [1: {id:1}, 2:{id:2}]
+
+
+json.likes do
+  json.array! @photo.likes, :id, :author_id
+end

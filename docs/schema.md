@@ -35,7 +35,7 @@ column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
 author_id   | integer   | not null, foreign key (references users), indexed
-post_id     | integer   | not null, foreign key (references posts), indexed
+photo_id    | integer   | not null, foreign key (references posts), indexed
 <!-- how to add unique [post_id, author_id] -->
 
 ## follows
