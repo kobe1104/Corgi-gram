@@ -24,7 +24,12 @@ const PhotoReducer = (state = {}, action) => {
       let newPhoto = merge({}, state[action.like.photo_id]);
       newPhoto.likes.push(action.like);
       return merge({}, state, {[newPhoto.id]: newPhoto});
-  
+    case REMOVE_LIKE:
+      let newState1 = merge({}, state);
+      let newPhoto1 = newState1[action.like.photo_id];
+      newPhoto1.likes = newPhoto1.likes.filter(like => like.photo_id !== action.like.photo_id).slice(0);
+      newState1[newPhoto1.id] =  newPhoto1;
+      return newState1;
 
     default:
       return state;

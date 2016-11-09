@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
-import * as Action from './actions/like_actions';
+import * as Action from './actions/comment_actions';
+// import * as Action from './actions/like_actions';
 import * as Api from './util/like_api_util';
 
 document.addEventListener('DOMContentLoaded', () => {

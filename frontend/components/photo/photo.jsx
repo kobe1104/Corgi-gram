@@ -6,7 +6,7 @@ class Photo extends React.Component {
   constructor(props) {
     super(props);
     this.iconUrl = this.iconUrl.bind(this);
-    this.state = {photo_id: 0, comment: ""}
+    this.state = {comment: {}}
   }
 
   componentWillMount() {
@@ -38,17 +38,22 @@ class Photo extends React.Component {
     }
   }
 
-  update(photo_id) {
+  update(photo) {
     return e => this.setState({
-      photo_id: photo_id,
-      comment: e.currentTarget.value
+      comment: {
+        author_id: this.props.currentUser.id,
+        photo_id: photo.id,
+        body: e.currentTarget.value
+      }
     });
   }
 
   submitHandler(e) {
     e.preventDefault();
-    // call createComment(this.state.comment)
+    this.props.createComment(this.state.comment);
   }
+
+
 
   render() {
     // debugger
@@ -70,9 +75,9 @@ class Photo extends React.Component {
               <img className='feed-like-icon'
                 onClick={this.toggleLike.bind(this, photo)}
                 src={this.iconUrl(photo.id)} />
-              <form >
+              <form onSubmit={this.submitHandler}>
                 <input type='text'
-                  onChange={this.update.bind(this, photo)}
+                  onChange={this.update(photo)}
                   placeholder='Add a comment...'/>
                 <input type='submit' value='Submit'/>
               </form>
