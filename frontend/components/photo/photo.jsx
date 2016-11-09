@@ -7,7 +7,7 @@ class Photo extends React.Component {
     super(props);
     this.iconUrl = this.iconUrl.bind(this);
     this.submitHandler = this.submitHandler.bind(this);
-    this.state = {comment: {}}
+    this.state = {comment: {body: ""}}
   }
 
   componentWillMount() {
@@ -52,6 +52,7 @@ class Photo extends React.Component {
   submitHandler(e) {
     e.preventDefault();
     this.props.createComment(this.state.comment);
+    this.setState({comment: {body: ""}});
   }
 
 
@@ -80,6 +81,7 @@ class Photo extends React.Component {
                 <input type='text'
                   onChange={this.update(photo)}
                   placeholder='Add a comment...'
+                  value={this.state.comment.body}
                   />
                 <input className='feed-comment-submit' type='submit' value='Submit'/>
               </form>

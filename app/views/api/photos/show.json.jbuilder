@@ -14,5 +14,5 @@ end
 
 
 json.likes do
-  json.array! @photo.likes, :id, :author_id
+  json.array! @photo.likes, :id, :author_id, :photo_id
 end

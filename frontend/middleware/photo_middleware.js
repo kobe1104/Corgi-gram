@@ -31,6 +31,20 @@ import {
   updatePhoto
 } from '../util/photo_api_util';
 
+import {
+  receiveAllLikes,
+  receiveLike,
+  removeLike,
+  FETCH_ALL_LIKES,
+  CREATE_LIKE,
+  DELETE_LIKE
+} from '../actions/comment_actions';
+
+import {
+  fetchLikes,
+  createLike,
+  deleteLike
+} from '../util/like_api_util';
 
 window.FETCH_PHOTOS = FETCH_PHOTOS;
 // debugger
@@ -41,7 +55,8 @@ const PhotoMiddleware = ({ getState, dispatch }) => next => action => {
   const getErrors = errors => dispatch(console.log(errors));
   const updateSuccess = photo => dispatch(updatePhoto(photo));
   const receiveCommentSuccess = comment => dispatch(receiveComment(comment));
-
+  const receiveLikeSuccess = like => dispatch(receiveLike(like));
+  const removeLikeSuccess = like => dispatch(removeLike(like));
 
   switch (action.type) {
     case FETCH_PHOTOS:
@@ -61,6 +76,12 @@ const PhotoMiddleware = ({ getState, dispatch }) => next => action => {
       return next(action);
     case CREATE_COMMENT:
       createComment(action.comment, receiveCommentSuccess);
+      return next(action);
+    case CREATE_LIKE:
+      createLike(action.like, receiveLikeSuccess);
+      return next(action);
+    case DELETE_LIKE:
+      deleteLike(action.id, removeLikeSuccess);
       return next(action);
     default:
       return next(action);
