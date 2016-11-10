@@ -1,0 +1,44 @@
+.photo-detail-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 100px 254px 0px 330px;
+  padding-right: 100px;
+}
+.photo-detail-captions {
+  font-family: 'Itim', cursive;
+  margin-left: 40px;
+}
+
+
+
+.photo-detail-comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+}
+
+
+.photo-detail-photo{
+  width: 600px;
+  height: 450px;
+}
+
+.photo-detail-user {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-bottom: 1px solid #bababa;
+  padding-bottom: 10px;
+}
+.photo-detail-user img {
+  height: 50px;
+  width: auto;
+}
+.photo-detail-user span {
+  margin-top: 15px;
+  padding-left: 10px;
+  font-family: 'Itim', cursive;
+}
