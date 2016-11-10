@@ -6,7 +6,8 @@ class Api::UsersController < ApplicationController
   end
 
   def index
-    @user = User.all
+    @users = User.all
+    @users.includes(:follows)
   end
 
   def create
@@ -22,7 +23,7 @@ class Api::UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username, :password, :email, :icon_url, :nickname)
+    params.require(:users).permit(:username, :password, :email, :icon_url, :nickname)
   end
 
 end

@@ -31,7 +31,6 @@ class Photo extends React.Component {
 
 
   iconUrl(photo_id) {
-    // debugger
     if (this.props.likes[photo_id]) {
       return "http://www.iconarchive.com/download/i66645/designbolts/free-valentine-heart/Heart.ico"
     } else {
@@ -59,13 +58,12 @@ class Photo extends React.Component {
 
   render() {
     // debugger
-    const userId = this.props.currentUser.id;
-    const photoFeed = this.props.photos.filter(
-      photo => photo.author_id !== userId);
+
     return (
+
       <div className='feed-container'>
         <ul>
-          {photoFeed.map((photo, i) => <li key={i}>
+          {this.props.photos.map((photo, i) => <li key={i}>
             <img className='feed-photo' key={photo.photo_url} src={photo.photo_url}/>
             <div className='fedd-number-likes'>{photo.likes.length} likes</div>
             <span className='feed-captions' key={photo.captions}>{photo.captions}</span>

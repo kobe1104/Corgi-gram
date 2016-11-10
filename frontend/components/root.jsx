@@ -10,6 +10,7 @@ import PhotoContainer from './photo/photo_container';
 import EditContainer from './edit/edit_container';
 import AboutContainer from './about/about_me_container';
 import PhotoDetailContainer from './photo_detail/photo_detail_container';
+import UserContainer from './user/user_container';
 
 const Root = ({store}) => {
 
@@ -35,8 +36,9 @@ const Root = ({store}) => {
             <Route path='photo-detail/:id' component={PhotoDetailContainer}/>
             <Route path='edit' component={EditContainer}/>
             <Route path='about' component={AboutContainer}/>
-            <Route path='profile' component={ProfileContainer}>
-            </Route>
+            <Route path='profile' component={ProfileContainer}/>
+            <Route path='users/:id' component={UserContainer}/>
+
           </Route>
 
           <Route path='login' component={LoginFormContainer} onEnter={_redirectIfLoggedIn} />

@@ -42,7 +42,7 @@ photo_id    | integer   | not null, foreign key (references posts), indexed
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-author_id   | integer   | not null, foreign key (references users), indexed
+follower_id | integer   | not null, foreign key (references users), indexed
 followed_id | integer   | not null, foreign key (references users), indexed
 <!-- author is the one who follows -->
 <!-- followed is the one who has been followed -->

@@ -32,3 +32,8 @@ Like.create(author_id: 2, photo_id: 10);
 Like.create(author_id: 3, photo_id: 10);
 Like.create(author_id: 4, photo_id: 10);
 Like.create(author_id: 5, photo_id: 10);
+
+Follow.create(followed_id: 9, follower_id: 6);
+Follow.create(followed_id: 9, follower_id: 1);
+Follow.create(followed_id: 9, follower_id: 2);
+Follow.create(followed_id: 9, follower_id: 3);

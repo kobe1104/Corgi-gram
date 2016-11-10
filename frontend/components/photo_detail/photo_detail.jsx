@@ -15,7 +15,6 @@ class PhotoDetail extends React.Component {
 
 
   render() {
-    // debugger
 
     const photo = this.props.photo;
     return (

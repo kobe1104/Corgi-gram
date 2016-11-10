@@ -5,9 +5,20 @@ class User < ActiveRecord::Base
   validates :username, uniqueness: true
   validates :password, length: {minimum: 6} ,allow_nil: true
 
-  has_many :photos
-  has_many :comments
+  has_many :photos,
+    class_name: "Photo",
+    foreign_key: :author_id,
+    primary_key: :id
 
+  has_many :comments,
+   class_name: "Comment",
+   foreign_key: :author_id,
+   primary_key: :id
+
+   has_many :follows,
+    class_name: "Follow",
+    foreign_key: :followed_id,
+    primary_key: :id
 
   after_initialize :ensure_session_token
 
