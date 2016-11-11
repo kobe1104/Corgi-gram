@@ -19,7 +19,7 @@ serve the frontend interactions.
   their photos easily with Corgigram tools and add any descriptions to
   them. The Photos are visible to all your fans and followers!
 
-  ![image of notebook index](docs/wireframes/post.tiff)
+  ![image of post](https://github.com/kobe1104/Corgi-gram/blob/master/docs/wireframes/post.tiff)
 
 ### Photos Feed!
 
