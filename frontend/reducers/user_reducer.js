@@ -9,12 +9,12 @@ const UserReducer = (state = {}, action) => {
       return merge({}, action.users);
     case RECEIVE_FOLLOW:
       let newUser = merge({}, state[action.follow.followed_id]);
-      newUser.follows.push(action.follow);
+      newUser.follow.push(action.follow);
       return merge({}, state, {[newUser.id]: newUser});
     case REMOVE_FOLLOW:
       let newState = merge({}, state);
       let newUser1 = newState[action.follow.followed_id];
-      newUser1.follows = newUser1.follows.filter(follow => follow.followed_id !== newUser1.id).slice(0);
+      newUser1.follow = newUser1.follow.filter(follow => follow.follower_id !== action.follow.follower_id).slice(0);
       newState[newUser1.id] = newUser1;
       return newState;
     default:

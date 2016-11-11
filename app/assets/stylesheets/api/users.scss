@@ -1,3 +1,55 @@
 // Place all the styles related to the api/users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.user-profile-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 200px;
+  margin-top: 20px;
+}
+
+.user-profile-icon {
+  color: white;
+}
+
+
+.user-profile-photos {
+  list-style-type: none;
+  display: flex;
+  padding: 20px 200px;
+
+}
+
+.user-profile-photos li img {
+  height: 295px;
+  width: 295px;
+  padding: 13px;
+}
+
+.user-profile-username {
+  padding-left: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+.user-profile-nickname {
+  padding-left: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+.user-profile-like-follow {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  font-family: 'Lato', sans-serif;
+}
+
+.user-profile-like-follow span{
+  padding: 0px 10px;
+}

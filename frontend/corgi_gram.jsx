@@ -6,6 +6,7 @@ import * as Action from './actions/follow_actions';
 // import * as Action from './actions/comment_actions';
 // import * as Action from './actions/like_actions';
 import * as Api from './util/follow_api_util';
+var Modal = require("react-modal");
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const root = document.getElementById('root');
+  Modal.setAppElement(document.body);
   ReactDOM.render(<Root store={store}/>, root);
   window.store = store;
   window.Action = Action;

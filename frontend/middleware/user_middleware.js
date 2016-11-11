@@ -7,7 +7,7 @@ import {
 
 import {
   fetchUsers,
-  fetchUser
+  fetchUser,
 } from '../util/user_api_util';
 
 

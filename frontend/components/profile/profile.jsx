@@ -7,11 +7,12 @@ class Profile extends React.Component {
     super(props);
     this.upload = this.upload.bind(this);
     this.uploadPhoto = this.uploadPhoto.bind(this);
-    this.testUpload = this.testUpload.bind(this);
+
   }
 
   componentWillMount() {
     this.props.fetchPhotos();
+    this.props.fetchAllFollows()
   }
   // user photos are not rednering until refresh
 
@@ -40,19 +41,11 @@ class Profile extends React.Component {
     this.props.createPhoto(photo);
   };
 
-  testUpload(e) {
-    e.preventDefault();
-    const pic = {
-      author_id: 6,
-      photo_url: "http://thedailycorgi.com/wp-content/uploads/2016/07/corgban.jpg",
-      captions: "test load"
-    };
-    this.props.createPhoto(pic);
-  }
+
 
 
   render() {
-
+    // debugger
     return(
         <div className='profile-container'>
           <div className='profile-box'>
@@ -62,8 +55,8 @@ class Profile extends React.Component {
               <span className='profile-nickname'>{this.props.currentUser.nickname}</span>
               <div className='profile-likes-follows'>
                 <span>{this.props.photos.length} posts</span>
-                <span>577 followers</span>
-                <span>369 following</span>
+                <span>{this.props.currentUser.follows.length} followers</span>
+                <span>{this.props.following} following</span>
               </div>
             </div>
             <div className= 'profile-buttons'>

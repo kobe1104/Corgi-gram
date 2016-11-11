@@ -9,7 +9,7 @@ export const commentsSelector = (state, id) => {
 };
 
 export const photosByCurrentUser = (state) => {
-  if (state.session.currentUser.id) {
+  if (state.session.currentUser) {
     const author_id = state.session.currentUser.id;
     const photos = values(state.photo) || [];
     const userPhotos = photos.filter(photo => photo.author_id == author_id);
@@ -18,13 +18,24 @@ export const photosByCurrentUser = (state) => {
 };
 
 export const photosNotByUser = state => {
-  const currentUserId = state.session.currentUser.id;
-  const photos = values(state.photo) || {};
-  const notUserPhotos = photos.filter(photo =>
-  photo.author_id !== currentUserId);
+  let notUserPhotos = [];
+  if (state.session.currentUser) {
+    const currentUserId = state.session.currentUser.id;
+    const photos = values(state.photo) || {};
+    notUserPhotos = photos.filter(photo =>
+    photo.author_id !== currentUserId);
+  }
   return notUserPhotos;
 };
 
-export const photoByUser = (state, {params}) => {
-  
+export const followingNumber = (state, params) => {
+  const author_id = Number(params.id);
+  const following = values(state.follows).filter(follow => follow.follower_id === author_id);
+  return following.length;
+}
+
+export const currentUserFollowingNumber = (state) => {
+  const author_id = state.session.currentUser.id;
+  const following = values(state.follows).filter(follow => follow.follower_id === author_id);
+  return following.length;
 }

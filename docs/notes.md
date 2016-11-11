@@ -3,13 +3,9 @@
 2. add alert to logout icon.
 3. change like icon from heart to paw.
 4. Add hover effect for icons.(add title)
-5. need to be able to check other user's profile and pics
+5. add author to posts which links to user profile page
+6. add date ago to photos.
 
 <!-- questions -->
 1. how to include author username in comment?
 2.
-
-follow:
-  1. Users need their own route under main. ex: 'main/profile/id'.
-    And 'main/profile/' will be current logged in user.
-(I changed routes.rb user to users)
