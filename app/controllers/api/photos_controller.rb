@@ -4,9 +4,7 @@ class Api::PhotosController < ApplicationController
   end
 
   def index
-    @photos = Photo.all
-    @photos.includes(:comments)
-    @photos.includes(:likes)
+    @photos = Photo.includes(:comments, :likes, :user)
   end
 
   def create

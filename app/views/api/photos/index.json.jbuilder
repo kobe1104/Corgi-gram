@@ -2,6 +2,8 @@
   json.set! photo.id do
     json.extract! photo, :id, :author_id, :photo_url, :captions, :type
     json.likes photo.likes, :id, :author_id, :photo_id
+    debugger
+    json.user photo.user, :id, :username, :icon_url
 
     json.comments do
       photo.comments.each do |comment|
@@ -12,6 +14,5 @@
       end
     end
 
-    json.user photo.user, :id, :username, :icon_url
   end
 end
