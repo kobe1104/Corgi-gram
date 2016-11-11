@@ -8,6 +8,7 @@
 
 ## JSON API
 
+
 ### Users
 
 - `POST /api/username`
@@ -28,14 +29,10 @@
 - `PATCH /api/photos/:id`
 - `DELETE /api/photos/:id`
 
-<!-- ### Comments
+### Comments
 
 - `GET /api/comments`
-- `GET /api/comments/:id`
 - `POST /api/comments`
-- `PATCH /api/comments/:id`
-- `DELETE /api/comments/:id` -->
-
 
 ### Likes
 
@@ -46,10 +43,3 @@
 
 - `POST /api/username/:id/follows/:id`
 - `DELETE /api/username/:id/follows/:id`
-
-
-### Tags
-
-- `GET /api/posts/:id/tags`
-- `POST /api/posts/:id/tags/:id`
-- `DELETE /api/posts/:id/tags/:id`

@@ -1,75 +1,38 @@
 # Corgigram
 
-[Heroku link][heroku]
-
-[Trello link][trello]
-
-[heroku]: https://corgigram.herokuapp.com/
-[trello]: https://trello.com/b/qte8T6LT/corgigram
-
-## Minimum Viable Product
-
 Corgigram is an evolutionary social media design for corgis. Corgigram has
 Ruby on Rails as backend and uses the latest technology of React Redux to
-serve frontend interactions. This App will have the following functionalities:
+serve frontend interactions.
 
-  - Hosted on Heroku
-  - New account creation, login, and guest/demo login
-  - Infinite scroll
-  - Posts
-  - Pictures
-  - Like
-  - Follow
-  - Production README
+[Corgigram live][heroku]
 
-  ## Design Docs
-* [View Wireframes][wireframes]
-* [React Components][components]
-* [API endpoints][api-endpoints]
-* [DB schema][schema]
-* [Sample State][sample-state]
-
-[wireframes]: docs/wireframes
-[components]: docs/component-hierarchy.md
-[sample-state]: docs/sample-state.md
-[api-endpoints]: docs/api-endpoints.md
-[schema]: docs/schema.md
+[heroku]: https://corgigram.herokuapp.com/
 
 
-## Implementation Timeline
+## Features & Implementation
 
-### Phase 1: Backend setup and Front End User Authentication (2 days)
+### Sharing Posts
 
-**Objective:** Functioning rails project with front-end Authentication
+  A post contains author information, a photo, a description of the photo and it allows all users to leave comments. It also let all users to like the post, each user can only like a post once. The Post table has
+  author's id and a body, all other elements such as photo and comments are store in separate tables that refer to it. When a Post is created,
+  the element components will retrieve the corresponding data and render on the post. When a post is liked, the "Like" component creates a new like record and render only the number of likes for that post.
 
-### Phase 2: Main component and Api (1 days)
-
-**Objective:** Nav bar and footer are showing, links work properly.
-
-### Phase 4: User profile components and Api (1 day)
-
-**Objective:** Profile page showing number of posts, followers and followed. Edit button and form work properly.
-
-### Phase 5: Photo component & Api (1 day w2 Monday)
-
-**Objective:** Photos showing on posts, profile(profile picture) and feed.
-
-### Phase 6: Comment component and Api (1 day w2 Tuesday)
-
-**Objective:** Comments showing on posts.
-
-### Phase 7: Posts component and Api (2 days w2 Thursday)
-
-**Objective:** Posts contain a photo, comments, likes, author and body.
-
-### Phase 8: Infinite scroll & final css Styling (1 days w2 Friday)
-
-**Objective:** Fetch new posts when scrolled to the bottom, all
-components are well positioned with proper styling.
+### Photos feed
 
 
 
-### Bonus Features (TBD)
-- [ ] Search posts by tags
-- [ ] Direct message
-- [ ] Add tags to posts
+### Like Posts & Follow any users
+
+When a Post is created, the element components will retrieve the corresponding data and render on the post. When a post is liked, the "Like" component creates a new like record and render only the number of likes for that post. A user can be followed as well as follow other users.
+As soon as a user starts following another user, the "Follow" component sends out an ajax request to generate a new record in the "Follow" table which stores the user id that has been followed as well as the follwer's id.
+
+
+## Future Directions for the Project
+
+### Adding Tags to Posts
+
+Posts will have a new attribute "Tags" which can be added by the owner of the post. Tags indicate the category of the post. Posts that own the same tags will be put under the same category and subcategory to speed up the "Search" feature.
+
+### Search Posts by Tags
+
+Search results render upon entering tags on the search bar. It will search on the posts that own the tags that match the key words entered in order.

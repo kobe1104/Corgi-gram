@@ -9,52 +9,48 @@
     - Home icon
     - Search
     - profile
-    - Recent activities
-  - Infinite feed
-  - Footer
-
+  - Photo feed
+  - Log out Button
 **ProfileContainer**
   - Profile
     - Nickname
     - Follows/posts/followed number
   - EditForm
-  - Edit Button
-  - Log out Button
   - Follow
   - NewPost
+  - Photo Detail
 
 **PhotoContainer**
   - Photo
-  - NewPhoto
-  - Caption
-  - LikesNumber
-  - AddComment
-  - Time
-  - AddTag
+    - Author
+    - Caption
+    - LikesNumber
+    - AddComment
+
+**PhotoDetailContainer**
+
+  - Photo
+    - Author
+    - Captions
+    - Comments
 
 **AboutContainer**
   - About
 
-**SearchContainer**
-  - Search
-  - Search Bar
-  - Search Feed
 
 
 
 
+|       Path         |       Componen         |
+|--------------------|------------------------|
+| "/signup"          | "AuthFormContainer"    |
+| "/login"           | "AuthFormContainer"    |  
+| "/"                | "MainContainer"        |
+| "/"                | "PhotoContainer"       |
+| "/users/:username" | "ProfileContainer"     |
+| "/photo-detail/:id"| "PhotoDetailContainer" |
+| "/edit"            | "EditForm"             |
+| "/about            | "AboutContainer"       |
 
-
-|Path   | Component   |
-|-------|-------------|
-| "/signup" | "AuthFormContainer" |
-| "/login" | "AuthFormContainer" |
-| "/" | "MainContainer" |
-| "/user/:username" | "ProfileContainer" |
-| "/user/:username/edit" | "EditForm" |
-| "/user/:username/photos/:id/photo/:id | "PhotoContainer" |
-| "/about | "AboutContainer" |
-| "/new-photo | "NewPhoto" |
-| "/search | "Search" |
 
 <!-- is  photo container gonna be the same in both main and profile? -->
