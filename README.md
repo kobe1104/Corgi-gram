@@ -1,8 +1,10 @@
 # Corgigram
 
 Corgigram is an evolutionary social media design for corgis. Corgigram has
-Ruby on Rails as backend and uses the latest technology of React Redux to
-serve frontend interactions.
+Ruby on Rails as backend and it uses the latest technology of React Redux to
+serve the frontend interactions.
+
+
 
 [Corgigram live][heroku]
 
@@ -11,28 +13,44 @@ serve frontend interactions.
 
 ## Features & Implementation
 
-### Sharing Posts
+### Share Your Photos!
 
-  A post contains author information, a photo, a description of the photo and it allows all users to leave comments. It also let all users to like the post, each user can only like a post once. The Post table has
-  author's id and a body, all other elements such as photo and comments are store in separate tables that refer to it. When a Post is created,
-  the element components will retrieve the corresponding data and render on the post. When a post is liked, the "Like" component creates a new like record and render only the number of likes for that post.
+  Upload your photos and build your own profile page! Users can upload
+  their photos easily with Corgigram tools and add any descriptions to
+  them. The Photos are visible to all your fans and followers!
 
-### Photos feed
+  ![image of notebook index](wireframes/post.tiff)
 
+### Photos Feed!
 
+  Explore the corgi world! Share other corgis' happiness or sadness by
+  checking out their photos. Users are able to LIKE the photos by simply
+  clicking on the corgi paw!
 
-### Like Posts & Follow any users
+### Follow Users!
 
-When a Post is created, the element components will retrieve the corresponding data and render on the post. When a post is liked, the "Like" component creates a new like record and render only the number of likes for that post. A user can be followed as well as follow other users.
-As soon as a user starts following another user, the "Follow" component sends out an ajax request to generate a new record in the "Follow" table which stores the user id that has been followed as well as the follwer's id.
+  If you really like some of the corgis you see on the feed, follow them
+  by clicking the FOLLOW button at their profile page! By following them,
+  the user gets all the latest updates from the following corgis!!
 
+  ![image of notebook index](wireframes/user.tiff)  
 
 ## Future Directions for the Project
 
-### Adding Tags to Posts
+### Direct Messaging!
 
-Posts will have a new attribute "Tags" which can be added by the owner of the post. Tags indicate the category of the post. Posts that own the same tags will be put under the same category and subcategory to speed up the "Search" feature.
+  Direct messaging is coming soon! All the corgis will be able to
+  message each other without meeting each other! It will completely
+  change the life of the corgis with lazy owners. Verbal harassment is
+  forbidden.
 
-### Search Posts by Tags
+### Adding Tags to Posts!
 
-Search results render upon entering tags on the search bar. It will search on the posts that own the tags that match the key words entered in order.
+  Choose a TAG for your photo! Photos with tags have higher exposure in
+  the feed. It also helps to make the photos more descriptive!!
+
+
+### Search Posts by Tags!
+
+  Have a specific topic of photos that you want to see? Enter the tags
+  and get all the related photos!
