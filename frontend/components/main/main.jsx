@@ -5,13 +5,7 @@ import SearchBar from 'react-search-bar';
 
 
 class Main extends React.Component {
-
-  // componentDidUpdate() {
-  //   if (!this.props.currentUser) {
-  //     this.props.router.push('/login');
-  //   }
-  // }
-
+  
   changeImg() {
     if (document.getElementsByClassName('user-heart').src === "https://freeiconshop.com/files/edd/heart-outline.png") {
       document.getElementsByClassName('user-heart').src = "http://iconshow.me/media/images/ui/ios7-icons/png/512/heart_1.png"

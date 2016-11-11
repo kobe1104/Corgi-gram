@@ -4,7 +4,10 @@ class Api::PhotosController < ApplicationController
   end
 
   def index
-    @photos = Photo.includes(:comments, :likes, :user)
+    # work on this
+    followed_photos = current_user.followee.ids
+    followed_photos << current_user.id
+    @photos = Photo.includes(:comments, :likes, :user).where(author_id: followed_photos)
   end
 
   def create

@@ -17,7 +17,6 @@ class Photo extends React.Component {
   }
 
 
-
   toggleLike(photo) {
     if (this.props.likes[photo.id]) {
       this.props.deleteLike(this.props.likes[photo.id].id);

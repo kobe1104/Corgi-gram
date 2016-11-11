@@ -18,14 +18,12 @@ export const photosByCurrentUser = (state) => {
 };
 
 export const photosNotByUser = state => {
-  let notUserPhotos = [];
+
   if (state.session.currentUser) {
     const currentUserId = state.session.currentUser.id;
     const photos = values(state.photo) || {};
-    notUserPhotos = photos.filter(photo =>
-    photo.author_id !== currentUserId);
+    return photos;
   }
-  return notUserPhotos;
 };
 
 export const followingNumber = (state, params) => {
@@ -35,7 +33,9 @@ export const followingNumber = (state, params) => {
 }
 
 export const currentUserFollowingNumber = (state) => {
-  const author_id = state.session.currentUser.id;
-  const following = values(state.follows).filter(follow => follow.follower_id === author_id);
-  return following.length;
+  if (state.session.currentUser) {
+    const author_id = state.session.currentUser.id;
+    const following = values(state.follows).filter(follow => follow.follower_id === author_id);
+    return following.length;
+  }
 }

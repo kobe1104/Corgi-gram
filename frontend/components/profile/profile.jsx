@@ -15,7 +15,11 @@ class Profile extends React.Component {
     this.props.fetchAllFollows()
   }
 
-
+  componentWillReceiveProps(newProps) {
+    if (!newProps.currentUser) {
+      this.props.router.push('/login');
+    }
+  }
 
   upload(e) {
     e.preventDefault();
@@ -43,7 +47,9 @@ class Profile extends React.Component {
 
 
   render() {
-    return(
+    console.log(this.props.currentUser);
+    if (this.props.currentUser) {
+      return(
         <div className='profile-container'>
           <div className='profile-box'>
             <img className='profile-icon' src={this.props.currentUser.icon_url}/>
@@ -58,25 +64,29 @@ class Profile extends React.Component {
             </div>
             <div className= 'profile-buttons'>
               <button className='profile-edit-button' onClick={() =>
-                   this.props.router.push('/edit')}>Edit Profile</button>
-              <button className='profile-add-photo-button'
-                onClick={this.upload}>Add Photo</button>
+                  this.props.router.push('/edit')}>Edit Profile</button>
+                <button className='profile-add-photo-button'
+                  onClick={this.upload}>Add Photo</button>
+              </div>
             </div>
-          </div>
-          <div className='profile-photos'>
-            {
-              this.props.photos.map((photo, i) => (
-                <div key={i}>
-                  <img onClick={() =>
-                      this.props.router.push(`/photo-detail/${photo.id}`)}
-                     key={photo.photo_url} src={photo.photo_url}/>
-                 </div>))
-            }
-          {this.props.children}
-        </div>
-        </div>
+            <div className='profile-photos'>
+              {
+                this.props.photos.map((photo, i) => (
+                  <div key={i}>
+                    <img onClick={() =>
+                        this.props.router.push(`/photo-detail/${photo.id}`)}
+                        key={photo.photo_url} src={photo.photo_url}/>
+                    </div>))
+                  }
+                  {this.props.children}
+                </div>
+              </div>
 
-    );
+            );
+
+    } else {
+      return(<div></div>);
+    }
   }
 
 }
