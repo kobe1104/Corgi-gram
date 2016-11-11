@@ -32,9 +32,9 @@ class Photo extends React.Component {
 
   iconUrl(photo_id) {
     if (this.props.likes[photo_id]) {
-      return "http://www.iconarchive.com/download/i66645/designbolts/free-valentine-heart/Heart.ico"
+      return "http://res.cloudinary.com/corgi1989/image/upload/c_scale,w_32/v1478849673/paw-print-outline_318-35039_oqu3oa.jpg"
     } else {
-      return "http://image.flaticon.com/icons/png/128/126/126471.png"
+      return "http://res.cloudinary.com/corgi1989/image/upload/c_scale,w_23/v1478879823/paw_njtxeg.jpg"
     }
   }
 

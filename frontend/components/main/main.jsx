@@ -35,21 +35,25 @@ class Main extends React.Component {
             <br/>
           </div>
           <div className='search-bar'>
-            <SearchBar onChange={(input, resolve) => {
-                // get suggestions based on `input`, then pass them to `resolve()`
-              }} />
+            <SearchBar onChange={(input, resolve) => {}} />
           </div>
           <div className='header-user-group'>
-            <img className='wing-icon' src="https://cdn.vectorstock.com/i/thumb-large/03/70/10190370.jpg"
-              onClick={() => this.props.router.push('main/about')}/>
             <br/>
-            <img className='user-heart' src='https://freeiconshop.com/files/edd/heart-outline.png'/>
+            <div className='wrapper-heart'>
+              <img className='user-heart' onClick={() => this.props.router.push('main/about')} src='https://freeiconshop.com/files/edd/heart-outline.png'/>
+              <span className='heart-text'>About Developer</span>
+            </div>
             <br/>
-            <img className='user-icon' src='https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-256.png'
-              onClick={() => this.props.router.push('main/profile')}/>
+            <div className='wrapper-user'>
+              <img className='user-icon' src='https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-256.png'
+                onClick={() => this.props.router.push('main/profile')}/>
+              <span className='user-text'>Profile</span>
+            </div>
             <br/>
-            <img className='user-logout' onClick={this.props.logout} src="http://image.flaticon.com/icons/png/128/53/53113.png"/>
-
+            <div className='wrapper-logout'>
+              <img className='user-logout' onClick={this.props.logout} src="http://image.flaticon.com/icons/png/128/53/53113.png"/>
+              <span className='logout-text'>Log Out</span>
+            </div>
           </div>
         </header>
         {this.props.children}

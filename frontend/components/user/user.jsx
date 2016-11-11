@@ -69,7 +69,18 @@ class User extends React.Component {
         <div className='user-profile-box'>
           <img className='user-profile-icon' src={this.userReady().icon_url}/>
           <div className='user-profile-info'>
-            <h2 className='user-profile-username'>{this.userReady().username}</h2>
+
+            <div className='user-profile-user-follow'>
+              <h2 className='user-profile-username'>{this.userReady().username}</h2>
+              <div className='user-profile-buttons'>
+                <button
+                  className="user-profile-follow-button"
+                  onClick={this.toggleFollow}>
+                  {this.followUnfollow()}
+                </button>
+              </div>
+
+            </div>
             <span className='user-profile-nickname'>{this.userReady().nickname}</span>
             <div className='user-profile-like-follow'>
               <span>{this.userReady().photos.length} posts</span>
@@ -77,27 +88,20 @@ class User extends React.Component {
               <span>{this.props.following} following</span>
             </div>
           </div>
-          <div className='user-profile-buttons'>
-            <button
-              className="user-profile-follow-button"
-              onClick={this.toggleFollow}>
-              {this.followUnfollow()}
-            </button>
-          </div>
         </div>
-        <ul className='user-profile-photos'>
+        <div className='user-profile-photos'>
           {
             this.userReady().photos.map((photo, i) =>
-              <li key={i}>
+              <div key={i}>
                 <img
                   onClick={() => this.props.router.push(`main/photo-detail/${photo.id}`)}
                   key={photo.id}
                   src={photo.photo_url}
                 />
-              </li>
+            </div>
             )
           }
-        </ul>
+        </div>
       </div>
     );
   }

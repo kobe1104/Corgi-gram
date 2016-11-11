@@ -11,6 +11,7 @@
         end
       end
     end
-    json.user photo.user, :id, :username, :icon_url
+
+    json.user json.(photo.user, :id, :username, :icon_url)
   end
 end

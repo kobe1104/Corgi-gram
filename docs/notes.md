@@ -1,10 +1,9 @@
 <!-- TODO -->
-1. Do edit page css, make update button work. Fix edit button hover size.
-2. add alert to logout icon.
-3. change like icon from heart to paw.
-4. Add hover effect for icons.(add title)
-6. add date ago to photos.
-7. add
+3. add date ago to photos.
+4. add infinite scroll.
+5. fix post author icon size.
+6. fix modal styling (back ground disappear)
+7. fix follow button position.
 <!-- questions -->
 1.
 2.

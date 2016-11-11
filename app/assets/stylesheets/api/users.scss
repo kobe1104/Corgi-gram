@@ -17,17 +17,20 @@
 
 .user-profile-icon {
   color: white;
+  height: 210px;
+  width: auto;
 }
 
 
 .user-profile-photos {
-  list-style-type: none;
-  display: flex;
   padding: 20px 200px;
-
+  max-width: 1000px;
+  margin-top: 30px;
 }
 
-.user-profile-photos li img {
+.user-profile-photos img {
+  position: relative;
+  float:left;
   height: 295px;
   width: 295px;
   padding: 13px;
@@ -52,4 +55,20 @@
 
 .user-profile-like-follow span{
   padding: 0px 10px;
+}
+
+.user-profile-follow-button {
+  margin-top: 30px;
+  margin-left: 50px;
+  height: 40px;
+  width:100px;
+  font-size: 20px;
+  color:white;
+  background-color: #52c145;
+  border: none;
+  border-radius: 10px;
+}
+
+.user-profile-user-follow {
+  display: flex;
 }

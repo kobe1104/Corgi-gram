@@ -36,8 +36,8 @@ class PhotoDetail extends React.Component {
       content : {
         position        : 'fixed',
         top             : '100px',
-        left            : '150px',
-        right           : '150px',
+        left            : '210px',
+        right           : '210px',
         bottom          : '252px',
         padding         : '0px',
         zIndex          : 11

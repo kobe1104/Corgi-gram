@@ -54,28 +54,32 @@
 
 .edit-submit-button {
   width: 100px;
-  // margin-left: 100px;
-  // margin-top: 20px;
   font-size: 15px;
-  // border: none;
-  // background-color: #d6d6d6;
+  border: none;
+  background-color: #ffda21;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 5px;
 }
 
 .edit-submit-button:hover {
   cursor:pointer;
-  background-color: #ffda21;
   border: none;
   border-radius: 5px;
 }
 
 .edit-cancel {
   width: 100px;
-  // font-size: 13px;
+  font-size: 15px;
+  border: none;
+  background-color: #a8a8a8;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 5px;
 }
 
 .edit-cancel:hover {
   cursor: pointer;
-  background-color: #ffda21;
   border: none;
   border-radius: 5px;
 }

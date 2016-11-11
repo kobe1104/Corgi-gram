@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   // margin-left: 500px;
+
 }
 
 .feed-container li {
@@ -79,4 +80,20 @@
 
 .feed-comment-submit {
   visibility: hidden;
+}
+
+.feed-author {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  margin-left: 20px;
+
+}
+
+.feed-author img {
+  height: 50px;
+  width: 50px;
+}
+
+.feed-author span {
 }

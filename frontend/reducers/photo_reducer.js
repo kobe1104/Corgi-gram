@@ -33,8 +33,9 @@ const PhotoReducer = (state = {}, action) => {
       return newState1;
     case RECEIVE_COMMENT:
       let newState2 = merge({}, state);
-      let newPhoto2 = merge({}, newState2[action.comment.photo_id]);
+      let newPhoto2 = newState2[action.comment.photo_id];
       newPhoto2 = merge(newPhoto2.comments, action.comment);
+      debugger
       return merge({}, state, {[newPhoto2.id]: newPhoto2});
     default:
       return state;

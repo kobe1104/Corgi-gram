@@ -20,12 +20,41 @@
   height: 40px;
   width: auto;
   padding-right: 10px;
+  // position: relative;
+  // display: inline-block;
 }
+
 
 .wing-icon:hover {
   cursor: pointer;
-  color: red;
 }
+
+.wrapper-heart {
+  position: relative;
+  display: inline-block;
+}
+
+.wrapper-heart .heart-text{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.wrapper-heart:hover .heart-text {
+  visibility:visible;
+}
+
 
 .user-icon {
   height: 30px;
@@ -37,6 +66,33 @@
 .user-icon:hover {
   cursor: pointer;
 }
+
+.wrapper-user {
+  position: relative;
+  display: inline-block;
+}
+
+.wrapper-user .user-text{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.wrapper-user:hover .user-text {
+  visibility:visible;
+}
+
 
 .user-heart {
   margin-top: 5px;
@@ -71,6 +127,33 @@
   cursor: pointer;
 }
 
+
+.wrapper-logout {
+  position: relative;
+  display: inline-block;
+}
+
+.wrapper-logout .logout-text{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.wrapper-logout:hover .logout-text {
+  visibility:visible;
+}
+
 .main-title {
   font-family: 'Indie Flower', cursive;
   margin-top: 15px;
@@ -87,7 +170,6 @@
 
 
 .search-bar {
-
   justify-content: center;
   display: flex;
   margin-top: 15px;
