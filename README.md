@@ -19,7 +19,7 @@ serve the frontend interactions.
   their photos easily with Corgigram tools and add any descriptions to
   them. The Photos are visible to all your fans and followers!
 
-  ![image of post](https://github.com/kobe1104/Corgi-gram/blob/master/docs/wireframes/post.tiff)
+  ![image of post](docs/wireframes/post.png)
 
 ### Photos Feed!
 
@@ -33,7 +33,7 @@ serve the frontend interactions.
   by clicking the FOLLOW button at their profile page! By following them,
   the user gets all the latest updates from the following corgis!!
 
-  ![image of notebook index](wireframes/user.tiff)  
+  ![image of user](docs/wireframes/user.png)  
 
 ## Future Directions for the Project
 
