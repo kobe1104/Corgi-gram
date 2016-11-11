@@ -50,13 +50,17 @@
 }
 
 .profile-photos {
-  list-style-type: none;
-  display: flex;
+  // list-style-type: none;
+  // display: flex;
+  // flex-direction: row;
   padding: 20px 200px;
+  max-width: 1000px;
 
 }
 
-.profile-photos li img {
+.profile-photos img {
+  position: relative;
+  float:left;
   height: 295px;
   width: 295px;
   padding: 13px;

@@ -13,6 +13,7 @@ const CommentReducer = (state = default_state, action) => {
     case RECEIVE_ALL_COMMENTS:
       return merge({}, action.comments);
     case RECEIVE_COMMENT:
+      debugger
       return merge({}, state, {[action.comment.id]: action.comment});
     default:
       return state;

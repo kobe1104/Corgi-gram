@@ -58,8 +58,13 @@ class PhotoDetail extends React.Component {
             </div>
             <h5 className='photo-detail-captions'>{this.props.currentUser.username}:  {photo.captions}</h5>
             <ul className='photo-detail-comments'>
-              {this.props.comments.map(
-                (comment, i) => <li key={i}>{comment.author_id}: {comment.body}</li>)}
+              {
+                this.props.comments.map(
+                (comment, i) =>
+                 <li key={i}>
+                   {comment.user.username}: {comment.body}
+                 </li>)
+               }
               </ul>
             </div>
           </div>

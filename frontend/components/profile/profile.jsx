@@ -36,7 +36,7 @@ class Profile extends React.Component {
     const photo = {
       author_id: this.props.currentUser.id,
       photo_url: url,
-      captions: 'will get from a text input'
+      captions: 'Welcome to Corgigram!!'
     };
     this.props.createPhoto(photo);
   };
@@ -66,17 +66,17 @@ class Profile extends React.Component {
                 onClick={this.upload}>Add Photo</button>
             </div>
           </div>
-          <ul className='profile-photos'>
+          <div className='profile-photos'>
             {
               this.props.photos.map((photo, i) => (
-                <li key={i}>
+                <div key={i}>
                   <img onClick={() =>
                       this.props.router.push(`main/photo-detail/${photo.id}`)}
                      key={photo.photo_url} src={photo.photo_url}/>
-                </li>))
+                 </div>))
             }
           {this.props.children}
-          </ul>
+        </div>
         </div>
 
     );

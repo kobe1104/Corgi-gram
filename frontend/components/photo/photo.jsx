@@ -54,6 +54,14 @@ class Photo extends React.Component {
     this.setState({comment: {body: ""}});
   }
 
+  feedComments(photo) {
+    if (photo.comments) {
+      const keyArray = Object.keys(photo.comments);
+      const comments = keyArray.map(id => photo.comments[id]);
+      return comments.map((comment, i) => <li key={i}>{comment.user.username}: {comment.body}</li>);
+    }
+  }
+
 
 
   render() {
@@ -64,11 +72,15 @@ class Photo extends React.Component {
       <div className='feed-container'>
         <ul>
           {this.props.photos.map((photo, i) => <li key={i}>
+            <div className='feed-author'>
+              <img onClick={() => this.props.router.push(`main/users/${photo.user.id}`)} src={photo.user.icon_url}/>
+              <span>{photo.user.username}</span>
+            </div>
             <img className='feed-photo' key={photo.photo_url} src={photo.photo_url}/>
             <div className='fedd-number-likes'>{photo.likes.length} likes</div>
             <span className='feed-captions' key={photo.captions}>{photo.captions}</span>
             <ul className='feed-comments'>
-              {photo.comments.map((comment, idx) => <li key={idx}>{comment.body}</li>)}
+              {this.feedComments(photo)}
             </ul>
             <div className='feed-line'></div>
             <div className='feed-comment-like'>
