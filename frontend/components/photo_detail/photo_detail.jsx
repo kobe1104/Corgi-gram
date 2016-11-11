@@ -18,7 +18,7 @@ class PhotoDetail extends React.Component {
   }
 
   closeModal() {
-    this.props.router.push(`main/profile`);
+    this.props.router.push(`/profile`);
   }
 
   render() {

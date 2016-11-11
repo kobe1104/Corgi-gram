@@ -14,12 +14,10 @@ class Profile extends React.Component {
     this.props.fetchPhotos();
     this.props.fetchAllFollows()
   }
-  // user photos are not rednering until refresh
+
 
 
   upload(e) {
-    // debugger
-    // const that = this;
     e.preventDefault();
     cloudinary.openUploadWidget(
       window.cloudinary_options,
@@ -45,7 +43,6 @@ class Profile extends React.Component {
 
 
   render() {
-    // debugger
     return(
         <div className='profile-container'>
           <div className='profile-box'>
@@ -61,7 +58,7 @@ class Profile extends React.Component {
             </div>
             <div className= 'profile-buttons'>
               <button className='profile-edit-button' onClick={() =>
-                   this.props.router.push('main/edit')}>Edit Profile</button>
+                   this.props.router.push('/edit')}>Edit Profile</button>
               <button className='profile-add-photo-button'
                 onClick={this.upload}>Add Photo</button>
             </div>
@@ -71,7 +68,7 @@ class Profile extends React.Component {
               this.props.photos.map((photo, i) => (
                 <div key={i}>
                   <img onClick={() =>
-                      this.props.router.push(`main/photo-detail/${photo.id}`)}
+                      this.props.router.push(`/photo-detail/${photo.id}`)}
                      key={photo.photo_url} src={photo.photo_url}/>
                  </div>))
             }
