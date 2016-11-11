@@ -1,6 +1,5 @@
 <!-- TODO -->
-3. add date ago to photos.
-4. add infinite scroll.
+1. add default profile pic
 <!-- questions -->
 1. fix modal styling (back ground disappear)
-2. modal go back to last page
+3. at profile, log out doesnt work properly

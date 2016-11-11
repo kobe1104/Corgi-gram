@@ -18,7 +18,9 @@ class PhotoDetail extends React.Component {
   }
 
   closeModal() {
-    this.props.router.push(`/profile`);
+    // debugger
+    this.props.router.goBack();
+    // this.setState({modal: false})
   }
 
   render() {
