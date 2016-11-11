@@ -70,11 +70,11 @@ class Photo extends React.Component {
     return (
 
       <div className='feed-container'>
-        <ul>
+        <ul className='feed-box'>
           {this.props.photos.map((photo, i) => <li key={i}>
             <div className='feed-author'>
               <img onClick={() => this.props.router.push(`main/users/${photo.user.id}`)} src={photo.user.icon_url}/>
-              <span>{photo.user.username}</span>
+              <div>{photo.user.username}</div>
             </div>
             <img className='feed-photo' key={photo.photo_url} src={photo.photo_url}/>
             <div className='fedd-number-likes'>{photo.likes.length} likes</div>
@@ -85,6 +85,7 @@ class Photo extends React.Component {
             <div className='feed-line'></div>
             <div className='feed-comment-like'>
               <img className='feed-like-icon'
+                title='like'
                 onClick={this.toggleLike.bind(this, photo)}
                 src={this.iconUrl(photo.id)} />
               <form className='feed-comment-form' onSubmit={this.submitHandler}>
