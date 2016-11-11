@@ -62,7 +62,7 @@ class LoginForm extends React.Component {
     // debugger
     return  (
       <div className="login-form-container">
-          <img className='login-img' src="http://hdfreewallpaper.net/wp-content/uploads/2015/12/Cute-Pembroke-Welsh-Corgi-short-free-hd-wallappers.jpg"/>
+          <img className='login-img' src="http://res.cloudinary.com/corgi1989/image/upload/v1478900169/signup_b8e2ae.jpg"/>
         <form onSubmit={this.handleSubmit} className='login-form-box'>
           <div className='form-title'><span>Corgi</span>gram</div>
           <br/>
@@ -91,7 +91,7 @@ class LoginForm extends React.Component {
             <div className='auth-form-or'></div>
           <br/>
 
-            <button className='signup-link' onClick={() => this.props.router.push('/signup')}>Sign Up</button>  
+            <button className='signup-link' onClick={() => this.props.router.push('/signup')}>Sign Up</button>
           <br/>
           <button className='guest-button' onClick={this.guestLogin}>Guest</button>
         </form>

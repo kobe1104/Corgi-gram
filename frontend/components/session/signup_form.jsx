@@ -59,7 +59,7 @@ class SignupForm extends React.Component {
   render () {
     return  (
       <div className="signup-form-container">
-        <img className='signup-form-img' src="https://wallpaperscraft.com/image/welsh_corgi_dog_view_grass_105205_1920x1080.jpg"/>
+        <img className='signup-form-img' src="http://res.cloudinary.com/corgi1989/image/upload/c_scale,w_1051/v1478899900/login_hujnsf.jpg"/>
         <form onSubmit={this.handleSubmit} className='signup-form-box'>
           <div className='form-title'><span>Corgi</span>gram</div>
           <br/>

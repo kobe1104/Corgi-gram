@@ -10,6 +10,12 @@ class Photo extends React.Component {
     this.state = {comment: {body: ""}}
   }
 
+  componentWillReceiveProps(newProps) {
+    if (!newProps.currentUser) {
+      this.props.router.push('/login');
+    }
+  }
+
   componentWillMount() {
     this.props.fetchPhotos();
     this.props.fetchComments();
@@ -64,13 +70,11 @@ class Photo extends React.Component {
 
 
   render() {
-    // debugger
-
-    return (
-
-      <div className='feed-container'>
-        <ul className='feed-box'>
-          {this.props.photos.map((photo, i) => <li key={i}>
+    if (this.props.currentUser) {
+      return (
+        <div className='feed-container'>
+          <ul className='feed-box'>
+            {this.props.photos.map((photo, i) => <li key={i}>
             <div className='feed-author'>
               <img onClick={() => this.props.router.push(`/users/${photo.user.id}`)} src={photo.user.icon_url}/>
               <div onClick={() => this.props.router.push(`/users/${photo.user.id}`)}>{photo.user.username}</div>
@@ -99,7 +103,11 @@ class Photo extends React.Component {
           </li>)}
         </ul>
       </div>
-    );
+      );
+    } else {
+      return (<div></div>);
+    }
+
   }
 }
 

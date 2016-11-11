@@ -9,6 +9,12 @@ class User extends React.Component {
     this.followUnfollow = this.followUnfollow.bind(this);
   };
 
+  componentWillReceiveProps(newProps) {
+    if (!newProps.currentUser) {
+      this.props.router.push('/login');
+    }
+  }
+
   componentWillMount() {
     // this.props.fetchPhotos();
     this.props.fetchAllFollows();
@@ -63,47 +69,50 @@ class User extends React.Component {
   }
 
   render() {
-    // debugger
-    return (
-      <div className='user-profile-container'>
-        <div className='user-profile-box'>
-          <img className='user-profile-icon' src={this.userReady().icon_url}/>
-          <div className='user-profile-info'>
+    if (this.props.currentUser) {
+      return (
+        <div className='user-profile-container'>
+          <div className='user-profile-box'>
+            <img className='user-profile-icon' src={this.userReady().icon_url}/>
+            <div className='user-profile-info'>
 
-            <div className='user-profile-user-follow'>
-              <h2 className='user-profile-username'>{this.userReady().username}</h2>
-              <div className='user-profile-buttons'>
-                <button
-                  className="user-profile-follow-button"
-                  onClick={this.toggleFollow}>
-                  {this.followUnfollow()}
-                </button>
+              <div className='user-profile-user-follow'>
+                <h2 className='user-profile-username'>{this.userReady().username}</h2>
+                <div className='user-profile-buttons'>
+                  <button
+                    className="user-profile-follow-button"
+                    onClick={this.toggleFollow}>
+                    {this.followUnfollow()}
+                  </button>
+                </div>
               </div>
-
-            </div>
-            <span className='user-profile-nickname'>{this.userReady().nickname}</span>
-            <div className='user-profile-like-follow'>
-              <span>{this.userReady().photos.length} posts</span>
-              <span>{this.userReady().follow.length} followers</span>
-              <span>{this.props.following} following</span>
+              <span className='user-profile-nickname'>{this.userReady().nickname}</span>
+              <div className='user-profile-like-follow'>
+                <span>{this.userReady().photos.length} posts</span>
+                <span>{this.userReady().follow.length} followers</span>
+                <span>{this.props.following} following</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div className='user-profile-photos'>
-          {
-            this.userReady().photos.map((photo, i) =>
+          <div className='user-profile-photos'>
+            {
+              this.userReady().photos.map((photo, i) =>
               <div key={i}>
                 <img
                   onClick={() => this.props.router.push(`/photo-detail/${photo.id}`)}
                   key={photo.id}
                   src={photo.photo_url}
-                />
-            </div>
+                  />
+              </div>
             )
           }
         </div>
       </div>
-    );
+      );
+    } else {
+      return(<div></div>);
+    }
+
   }
 }
 

@@ -47,7 +47,6 @@ class Profile extends React.Component {
 
 
   render() {
-    console.log(this.props.currentUser);
     if (this.props.currentUser) {
       return(
         <div className='profile-container'>
