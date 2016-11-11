@@ -3,6 +3,11 @@ export const LOGOUT = "LOGOUT";
 export const SIGNUP = "SIGNUP";
 export const RECEIVE_CURRENT_USER = "RECEIVE_CURRENT_USER";
 export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
+export const REMOVE_CURRENT_USER = "REMOVE_CURRENT_USER"
+
+export const removeCurrentUser = () => ({
+  type: REMOVE_CURRENT_USER
+})
 
 export const login = user => ({
   type: LOGIN,

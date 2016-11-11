@@ -30,7 +30,7 @@ class Edit extends React.Component {
           </label>
           <div className='edit-button-container'>
             <input className='edit-submit-button' type='submit' value='Submit'></input>
-            <button className='edit-cancel' onClick={() => this.props.router.push('/main/profile')}>Cancel</button>
+            <button className='edit-cancel' onClick={() => this.props.router.push('/profile')}>Cancel</button>
           </div>
         </form>
       </div>

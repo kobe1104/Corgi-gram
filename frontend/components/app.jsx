@@ -4,6 +4,7 @@ import MainContainer from './main/main_container';
 
 const App = ({children}) => (
   <div>
+    <MainContainer/>
     {children}
   </div>
 )

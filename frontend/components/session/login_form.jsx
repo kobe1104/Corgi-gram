@@ -15,7 +15,7 @@ class LoginForm extends React.Component {
 
   redirectIfLoggedIn() {
     if (this.props.loggedIn) {
-      this.props.router.push('/main');
+      this.props.router.push('/');
     }
   }
 
@@ -56,7 +56,10 @@ class LoginForm extends React.Component {
   }
 
 
+
+
   render () {
+    // debugger
     return  (
       <div className="login-form-container">
           <img className='login-img' src="http://hdfreewallpaper.net/wp-content/uploads/2015/12/Cute-Pembroke-Welsh-Corgi-short-free-hd-wallappers.jpg"/>
@@ -87,7 +90,8 @@ class LoginForm extends React.Component {
           </div>
             <div className='auth-form-or'></div>
           <br/>
-          <button className='signup-link' onClick={() => this.props.router.push('/signup')}>Sign Up</button>
+
+            <button className='signup-link' onClick={() => this.props.router.push('/signup')}>Sign Up</button>  
           <br/>
           <button className='guest-button' onClick={this.guestLogin}>Guest</button>
         </form>

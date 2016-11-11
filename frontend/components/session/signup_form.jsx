@@ -15,7 +15,7 @@ class SignupForm extends React.Component {
 
   redirectIfLoggedIn() {
     if (this.props.loggedIn) {
-      this.props.router.push('/main');
+      this.props.router.push('/');
     }
   }
 

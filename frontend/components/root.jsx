@@ -24,23 +24,19 @@ const Root = ({store}) => {
   const _redirectIfLoggedIn = (nextState, replace) => {
     const currentUser = store.getState().session.currentUser;
     if (currentUser) {
-      replace('/main');
+      replace('/');
     }
   };
   return (
     <Provider store={store}>
       <Router history={hashHistory}>
         <Route path='/' component={App}>
-          <Route path='main' component={MainContainer} onEnter={_ensureLoggedIn}>
-            <IndexRoute component={PhotoContainer} />
-            <Route path='photo-detail/:id' component={PhotoDetailContainer}/>
-            <Route path='edit' component={EditContainer}/>
-            <Route path='about' component={AboutContainer}/>
-            <Route path='profile' component={ProfileContainer}/>
-            <Route path='users/:id' component={UserContainer}/>
-
-          </Route>
-
+          <IndexRoute component={PhotoContainer} onEnter={_ensureLoggedIn}/>
+          <Route path='photo-detail/:id' component={PhotoDetailContainer} onEnter={_ensureLoggedIn}/>
+          <Route path='edit' component={EditContainer} onEnter={_ensureLoggedIn}/>
+          <Route path='about' component={AboutContainer} onEnter={_ensureLoggedIn}/>
+          <Route path='profile' component={ProfileContainer} onEnter={_ensureLoggedIn}/>
+          <Route path='users/:id' component={UserContainer} onEnter={_ensureLoggedIn}/>
           <Route path='login' component={LoginFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path='signup' component={SignupFormContainer} onEnter={_redirectIfLoggedIn} />
         </Route>
