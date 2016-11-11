@@ -94,7 +94,7 @@ class User extends React.Component {
             this.userReady().photos.map((photo, i) =>
               <div key={i}>
                 <img
-                  onClick={() => this.props.router.push(`main/photo-detail/${photo.id}`)}
+                  onClick={() => this.props.router.push(`/photo-detail/${photo.id}`)}
                   key={photo.id}
                   src={photo.photo_url}
                 />

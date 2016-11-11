@@ -73,8 +73,8 @@ class Photo extends React.Component {
         <ul className='feed-box'>
           {this.props.photos.map((photo, i) => <li key={i}>
             <div className='feed-author'>
-              <img onClick={() => this.props.router.push(`main/users/${photo.user.id}`)} src={photo.user.icon_url}/>
-              <div>{photo.user.username}</div>
+              <img onClick={() => this.props.router.push(`/users/${photo.user.id}`)} src={photo.user.icon_url}/>
+              <div onClick={() => this.props.router.push(`/users/${photo.user.id}`)}>{photo.user.username}</div>
             </div>
             <img className='feed-photo' key={photo.photo_url} src={photo.photo_url}/>
             <div className='fedd-number-likes'>{photo.likes.length} likes</div>
