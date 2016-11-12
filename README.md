@@ -19,7 +19,7 @@ serve the frontend interactions.
   their photos easily with Corgigram tools and add any descriptions to
   them. The Photos are visible to all your fans and followers!
 
-  ![](http://res.cloudinary.com/corgi1989/image/upload/v1478908543/post_xeud4s.tiff)
+  ![](http://res.cloudinary.com/duep1w4tv/image/upload/v1478908782/ShareAGram/wrcozplka6arvmlqgkn6.jpg)
 
 ### Photos Feed!
 
