@@ -19,7 +19,7 @@ serve the frontend interactions.
   their photos easily with Corgigram tools and add any descriptions to
   them. The Photos are visible to all your fans and followers!
 
-  ![](http://res.cloudinary.com/duep1w4tv/image/upload/v1478908782/ShareAGram/wrcozplka6arvmlqgkn6.jpg)
+  ![](http://res.cloudinary.com/corgi1989/image/upload/v1478908976/post_ebjjbl.jpg)
 
 ### Photos Feed!
 
@@ -33,7 +33,7 @@ serve the frontend interactions.
   by clicking the FOLLOW button at their profile page! By following them,
   the user gets all the latest updates from the following corgis!!
 
-  ![](docs/wireframes/user.png)  
+  ![](http://res.cloudinary.com/corgi1989/image/upload/v1478909074/user_af4pyu.jpg)  
 
 ## Future Directions for the Project
 
