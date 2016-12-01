@@ -59,6 +59,12 @@
   height: 295px;
   width: 295px;
   padding: 13px;
+
+  object-fit: cover;
+}
+
+.profile-photos img:hover {
+  cursor: pointer;
 }
 
 .profile-username {

@@ -39,6 +39,10 @@
 .feed-photo {
   width: 600px;
   height: 450px;
+  object-fit: cover;
+  // flex-shrink: 0;
+  // min-width: 100%;
+  // min-height: 100%;
 }
 
 .feed-line {
