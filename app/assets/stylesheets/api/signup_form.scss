@@ -1,8 +1,10 @@
 .signup-button {
   background-color: #4286f4;
   border: none;
+  border-radius: 3px;
   color: white;
-  padding: 3px 94px;
+  padding: 3px 81px;
+  margin: 5px 0px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -12,8 +14,10 @@
 .login_link {
   background-color: #4286f4;
   border: none;
+  border-radius: 3px;
   color: white;
-  padding: 3px 107px;
+  padding: 3px 97px;
+  margin: 5px 0px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -49,4 +53,9 @@
   width: 100%;
   height: 100%;
   filter: blur(3px);
+}
+
+.email-input {
+  margin: 5px 0px;
+  border-radius: 5px;
 }
