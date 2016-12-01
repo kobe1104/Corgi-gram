@@ -18,24 +18,25 @@
   // margin-top: 100px;
 }
 
-// .login-form-box .signup-button {
-//   // background-color: #4286f4;
-//   border: none;
-//   color: white;
-//   padding: 0px 35px;
-//   text-align: center;
-//   text-decoration: none;
-//   display: inline-block;
-//   font-size: 16px;
-// }
 
+.username-input {
+  margin: 5px 0px;
+  border-radius: 5px;
+}
+
+.password-input {
+  margin: 5px 0px;
+  border-radius: 5px;
+}
 
 .login-button {
   background-color: #4286f4;
   // background-color: #bababa;
+  border-radius: 3px;
   border: none;
   color: white;
-  padding: 3px 105px;
+  margin: 5px 0px;
+  padding: 3px 97px;
   text-align: center;
   // text-decoration: none;
   display: inline-block;
@@ -43,12 +44,15 @@
 }
 
 
+
 .signup-link {
   background-color: #4286f4;
   // background-color: #bababa;
   border: none;
+  margin: 5px 0px;
+  border-radius: 3px;
   color: white;
-  padding: 3px 100px;
+  padding: 3px 90px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
