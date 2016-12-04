@@ -44,11 +44,11 @@
 }
 
 .username-input {
-  width: 253px;
+  width: 250px;
   height: 30px;
 }
 .password-input {
-  width: 253px;
+  width: 250px;
   height: 30px;
 }
 
@@ -104,4 +104,8 @@
   // -o-filter: blur(5px);
   // -ms-filter: blur(5px);
   filter: blur(3px);
+}
+
+.login-error {
+  color: red;
 }
