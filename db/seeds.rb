@@ -97,7 +97,7 @@
 
 # users
 henry1 = User.create(username: 'henry1', password: 'password', email: 'abc111@gmail', nickname: "just a lonely corgi", icon_url:"https://res.cloudinary.com/corgi1989/image/upload/v1478849289/Corgigram/ridiculous-corgi-20.jpg");
-sir = User.create(username: 'Sir. Corgilim', password: 'password', email: 'abc111@gmail', nickname: 'Guest', icon_url: "httpss://s-media-cache-ak0.pinimg.com/236x/e0/c8/d6/e0c8d67a12b3145f68a30605708f0991.jpg");
+sir = User.create(username: 'Sir. Corgilim', password: 'password', email: 'abc111@gmail', nickname: 'Guest', icon_url: "https://s-media-cache-ak0.pinimg.com/236x/e0/c8/d6/e0c8d67a12b3145f68a30605708f0991.jpg");
 user1 = User.create(username: 'CorgiCorgi', password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849279/Corgigram/images_52.jpg");
 user2 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478891286/ejurqeq3l4odef6pbwia.jpg");
 user3 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849289/Corgigram/ridiculous-corgi-18.jpg");

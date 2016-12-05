@@ -62,7 +62,7 @@ class LoginForm extends React.Component {
     // debugger
     return  (
       <div className="login-form-container">
-          <img className='login-img' src="http://res.cloudinary.com/corgi1989/image/upload/v1478900169/signup_b8e2ae.jpg"/>
+          <img className='login-img' src="https://res.cloudinary.com/corgi1989/image/upload/v1478900169/signup_b8e2ae.jpg"/>
         <form onSubmit={this.handleSubmit} className='login-form-box'>
           <div className='form-title'><span>Corgi</span>gram</div>
           <br/>

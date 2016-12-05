@@ -37,9 +37,9 @@ class Photo extends React.Component {
 
   iconUrl(photo_id) {
     if (this.props.likes[photo_id]) {
-      return "http://res.cloudinary.com/corgi1989/image/upload/c_scale,w_48/v1480621165/paw_png_nxddiu.png"
+      return "https://res.cloudinary.com/corgi1989/image/upload/c_scale,w_48/v1480621165/paw_png_nxddiu.png"
     } else {
-      return "http://res.cloudinary.com/corgi1989/image/upload/c_scale,w_81/v1480909580/imageedit_3_6330252155_fdlgzy.png"
+      return "https://res.cloudinary.com/corgi1989/image/upload/c_scale,w_81/v1480909580/imageedit_3_6330252155_fdlgzy.png"
     }
   }
 
