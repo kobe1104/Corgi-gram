@@ -126,11 +126,6 @@ Photo.create(author_id: henry1.id, photo_url: "http://i.imgur.com/DqZsTYl.jpg", 
 Photo.create(author_id: henry1.id, photo_url: "http://images.memes.com/meme/673847", captions: "Summer Corgi");
 Photo.create(author_id: henry1.id, photo_url: "http://i.imgur.com/RtzLYg7.gif", captions: "Winter Corgi");
 
-Photo.create(author_id: sir.id, photo_url: "http://i.imgur.com/tWJb7xR.jpg", captions: "wink wink");
-Photo.create(author_id: sir.id, photo_url: "http://i.imgur.com/StZopHZ.jpg", captions: "wink wink");
-Photo.create(author_id: sir.id, photo_url: "https://s-media-cache-ak0.pinimg.com/236x/5e/0c/2a/5e0c2a140d421f0c4fa5f6194e92d97b.jpg", captions: "wink wink");
-Photo.create(author_id: sir.id, photo_url: "http://66.media.tumblr.com/85c2333d5cc16a5974824f57b9fef9f9/tumblr_mhd5de2Akh1s0ath6o1_1280.jpg", captions: "wink wink");
-Photo.create(author_id: sir.id, photo_url: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPhmHUu9Hb1fTb9AW1RZdezTIo6O6DVzXduBVXP5Q5YiYrpeupmA", captions: "wink wink");
 
 Photo.create(author_id: user1.id, photo_url: "http://res.cloudinary.com/corgi1989/image/upload/v1479625945/tlj9hudxdk3ze6jsrsjw.jpg", captions: Faker::Lorem.sentence(5));
 Photo.create(author_id: user1.id, photo_url: "http://res.cloudinary.com/corgi1989/image/upload/c_scale,w_700/v1478567079/jqapybwijjrnqlseaqah.jpg", captions: Faker::Lorem.sentence(5));
@@ -225,6 +220,11 @@ Photo.create(author_id: user13.id, photo_url: "http://res.cloudinary.com/corgi19
 Photo.create(author_id: user13.id, photo_url: "http://res.cloudinary.com/corgi1989/image/upload/v1478849281/Corgigram/images_67.jpg", captions: Faker::Lorem.sentence(5));
 Photo.create(author_id: user11.id, photo_url: "http://res.cloudinary.com/corgi1989/image/upload/v1478849281/Corgigram/images_72.jpg", captions: Faker::Lorem.sentence(5));
 
+Photo.create(author_id: sir.id, photo_url: "http://i.imgur.com/tWJb7xR.jpg", captions: "wink wink");
+Photo.create(author_id: sir.id, photo_url: "http://i.imgur.com/StZopHZ.jpg", captions: "wink wink");
+Photo.create(author_id: sir.id, photo_url: "https://s-media-cache-ak0.pinimg.com/236x/5e/0c/2a/5e0c2a140d421f0c4fa5f6194e92d97b.jpg", captions: "wink wink");
+Photo.create(author_id: sir.id, photo_url: "http://66.media.tumblr.com/85c2333d5cc16a5974824f57b9fef9f9/tumblr_mhd5de2Akh1s0ath6o1_1280.jpg", captions: "wink wink");
+Photo.create(author_id: sir.id, photo_url: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPhmHUu9Hb1fTb9AW1RZdezTIo6O6DVzXduBVXP5Q5YiYrpeupmA", captions: "wink wink");
 
 
 Comment.create(author_id: sir.id, photo_id: 1, body: "I love autumn");
@@ -266,6 +266,10 @@ Like.create(author_id: henry1.id, photo_id: 10);
 Like.create(author_id: henry1.id, photo_id: 9);
 Like.create(author_id: sir.id, photo_id: 6);
 Like.create(author_id: sir.id, photo_id: 1);
+
+1000.times do
+  Like.create(author_id: (rand(21) + 1), photo_id: (rand(93) + 1));
+end
 
 Follow.create(followed_id: henry1.id, follower_id: sir.id);
 Follow.create(followed_id: sir.id, follower_id: henry1.id);

@@ -15,19 +15,16 @@
 }
 
 .feed-container li {
-  border: 1px solid #f4f4f4;
   margin-bottom: 50px;
   list-style-type: none;
-  margin-right: 30px;
-  padding: 20px 0px 0px 0px;
-  background-color: white;
+  margin-right:85px;
+  // padding-right: 100px;
   border: 1px solid black;
 }
 
 .feed-number-likes {
   font-family: 'Itim', cursive;
   margin-left: 20px;
-  margin-left: 104px;
 }
 
 .feed-container span {
@@ -49,7 +46,6 @@
   width: 600px;
   height: 450px;
   object-fit: cover;
-  margin-left: 104px;
 }
 
 .feed-line {
@@ -74,14 +70,16 @@
 
 .feed-container input {
   border: none;
-  font-size: 17px;
+  font-size: 20px;
   margin-bottom: 2px;
+  // border: 1px solid black;
+  width: 500px;
 }
 
 .feed-comments {
   display: flex;
   flex-direction: column;
-  margin-left: 104px;
+
 }
 
 .feed-comments li {
@@ -100,8 +98,10 @@
   display: flex;
   flex-direction: row;
   justify-content:flex-start;
+  margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
+  // border: 1px solid black;
 }
 
 .feed-author:hover {
@@ -120,8 +120,13 @@
 }
 
 .feed-captions {
-  padding-left: 85px;
+  // padding-left: 85px;
   // border: 1px solid black;
-  width: 700px;
+  width: 400px;
   // margin-right: ;
+}
+
+.feed-box li {
+  width: 600px;
+  // padding-right: 200px;
 }
