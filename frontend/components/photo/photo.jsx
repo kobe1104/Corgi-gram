@@ -73,6 +73,7 @@ class Photo extends React.Component {
     if (this.props.currentUser) {
       return (
         <div className='feed-container'>
+
           <ul className='feed-box'>
             {this.props.photos.map((photo, i) => <li key={i}>
             <div className='feed-author'>
@@ -80,7 +81,7 @@ class Photo extends React.Component {
               <div onClick={() => this.props.router.push(`/users/${photo.user.id}`)}>{photo.user.username}</div>
             </div>
             <img className='feed-photo' key={photo.photo_url} src={photo.photo_url}/>
-            <div className='fedd-number-likes'>{photo.likes.length} likes</div>
+            <div className='feed-number-likes'>{photo.likes.length} likes</div>
             <span className='feed-captions' key={photo.captions}>{photo.captions}</span>
             <ul className='feed-comments'>
               {this.feedComments(photo)}
@@ -101,6 +102,7 @@ class Photo extends React.Component {
               </form>
             </div>
           </li>)}
+
         </ul>
       </div>
       );

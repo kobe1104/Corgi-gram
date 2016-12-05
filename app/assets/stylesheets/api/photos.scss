@@ -8,6 +8,8 @@
   justify-content: center;
 }
 
+
+
 .feed-comment-form {
   margin-bottom: 30px;
 }
@@ -22,9 +24,10 @@
   border: 1px solid black;
 }
 
-.fedd-number-likes {
+.feed-number-likes {
   font-family: 'Itim', cursive;
   margin-left: 20px;
+  margin-left: 104px;
 }
 
 .feed-container span {
@@ -36,13 +39,17 @@
   margin-left: 20px;
 }
 
+
+.feed-box {
+  margin-left: 100px;
+}
+
+
 .feed-photo {
   width: 600px;
   height: 450px;
   object-fit: cover;
-  // flex-shrink: 0;
-  // min-width: 100%;
-  // min-height: 100%;
+  margin-left: 104px;
 }
 
 .feed-line {
@@ -74,6 +81,7 @@
 .feed-comments {
   display: flex;
   flex-direction: column;
+  margin-left: 104px;
 }
 
 .feed-comments li {
@@ -109,4 +117,11 @@
   font-family: 'Itim', cursive;
   margin-left: 20px;
   margin-top: 5px;
+}
+
+.feed-captions {
+  padding-left: 85px;
+  // border: 1px solid black;
+  width: 700px;
+  // margin-right: ;
 }
