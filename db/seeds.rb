@@ -121,10 +121,10 @@ user20 = User.create(username: Faker::Internet.user_name, password: 'password', 
 
 
 
-Photo.create(author_id: henry1.id, photo_url: "https://i.imgur.com/xTcE7tU.gif", captions: "Autumn Corgi");
-Photo.create(author_id: henry1.id, photo_url: "https://i.imgur.com/DqZsTYl.jpg", captions: "Spring Corgi");
-Photo.create(author_id: henry1.id, photo_url: "https://images.memes.com/meme/673847", captions: "Summer Corgi");
-Photo.create(author_id: henry1.id, photo_url: "https://i.imgur.com/RtzLYg7.gif", captions: "Winter Corgi");
+Photo.create(author_id: henry1.id, photo_url: "https://res.cloudinary.com/corgi1989/image/upload/v1480963162/fall_corgi_e0t0gl.gif", captions: "Autumn Corgi");
+Photo.create(author_id: henry1.id, photo_url: "https://res.cloudinary.com/corgi1989/image/upload/v1480963161/spring_corgi_e6jb35.gif", captions: "Spring Corgi");
+Photo.create(author_id: henry1.id, photo_url: "https://res.cloudinary.com/corgi1989/image/upload/v1480963162/summer_corgi_qun4rf.gif", captions: "Summer Corgi");
+Photo.create(author_id: henry1.id, photo_url: "https://res.cloudinary.com/corgi1989/image/upload/v1480963161/winter_corgi_x0nwl5.gif", captions: "Winter Corgi");
 
 
 Photo.create(author_id: user1.id, photo_url: "https://res.cloudinary.com/corgi1989/image/upload/v1479625945/tlj9hudxdk3ze6jsrsjw.jpg", captions: Faker::Lorem.sentence(5));
