@@ -88,10 +88,13 @@ class Photo extends React.Component {
             </ul>
             <div className='feed-line'></div>
             <div className='feed-comment-like'>
-              <img className='feed-like-icon'
-                title='like'
-                onClick={this.toggleLike.bind(this, photo)}
-                src={this.iconUrl(photo.id)} />
+              <div className="wrapper-like">
+                <img className='feed-like-icon'
+                  title='like'
+                  onClick={this.toggleLike.bind(this, photo)}
+                  src={this.iconUrl(photo.id)} />
+                <div className="wrapper-like-text">Like</div>
+              </div>
               <form className='feed-comment-form' onSubmit={this.submitHandler}>
                 <input type='text'
                   onChange={this.update(photo)}
@@ -102,7 +105,6 @@ class Photo extends React.Component {
               </form>
             </div>
           </li>)}
-
         </ul>
       </div>
       );
