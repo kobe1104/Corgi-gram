@@ -5,6 +5,16 @@ import SearchBar from 'react-search-bar';
 
 
 class Main extends React.Component {
+  constructor(props) {
+    super(props);
+    this.updateSearch = this.updateSearch.bind(this);
+    this.state = {search: ""};
+  }
+
+  updateSearch(searchString) {
+    this.setState({search: searchString})
+  }
+
 
   render () {
     if (this.props.currentUser) {
@@ -21,7 +31,7 @@ class Main extends React.Component {
               <br/>
             </div>
             <div className='search-bar'>
-              <SearchBar onChange={(input, resolve) => {}} />
+              <SearchBar onChange={(input, resolve) => {this.updateSearch(input)}} />
             </div>
             <div className='header-user-group'>
               <br/>
