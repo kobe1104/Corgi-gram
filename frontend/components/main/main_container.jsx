@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import Main from './main';
 import { logout } from '../../actions/session_actions';
-import { fetchSearch } from '../../actions/search_actions';
+import { fetchSearch, clearSearch } from '../../actions/search_actions';
 
 
 const mapStateToProps = state => ({
@@ -11,7 +11,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   logout: () => dispatch(logout()),
-  fetchSearch: (search) => dispatch(fetchSearch(search))
+  fetchSearch: (search) => dispatch(fetchSearch(search)),
+  clearSearch: () => dispatch(clearSearch())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main);

@@ -72,7 +72,7 @@ class Photo extends React.Component {
   render() {
     if (this.props.currentUser) {
       return (
-        <div className='feed-container'>
+        <div className='feed-container' onClick={() => this.props.clearSearch()}>
 
           <ul className='feed-box'>
             {this.props.photos.map((photo, i) => <li key={i}>

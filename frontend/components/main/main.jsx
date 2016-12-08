@@ -37,7 +37,7 @@ class Main extends React.Component {
   render () {
     if (this.props.currentUser) {
       return (
-        <div >
+        <div onClick={() => this.props.clearSearch()}>
           <header className='main-header'>
             <div className='header-logo-group'>
               <img className='corgi-icon' src='https://res.cloudinary.com/corgi1989/image/upload/c_scale,w_98/v1478899902/corgi_logo_to56fa.png'
