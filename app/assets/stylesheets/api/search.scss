@@ -1,0 +1,32 @@
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.search-results-ul {
+  border: 1px solid black;
+  position: absolute;
+  background-color: white;
+  width: 477px;
+  max-height: 210px;
+  overflow:scroll;
+}
+
+
+
+.search-results {
+  margin-left: 2px;
+}
+
+.search-user-img {
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+.search-user:hover {
+  background-color: #d3d3d3;
+}

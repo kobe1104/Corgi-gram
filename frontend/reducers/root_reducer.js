@@ -5,6 +5,8 @@ import PhotoReducer from './photo_reducer';
 import LikeReducer from './like_reducer';
 import FollowReducer from './follow_reducer';
 import UserReducer from './user_reducer';
+import SearchReducer from './search_reducer';
+
 
 const RootReducer = combineReducers({
   session: SessionReducer,
@@ -12,7 +14,8 @@ const RootReducer = combineReducers({
   users: UserReducer,
   // comment: CommentReducer,
   follows: FollowReducer,
-  photo: PhotoReducer});
-  // rename to photos
+  photo: PhotoReducer,
+  searchResults: SearchReducer
+});
 
 export default RootReducer;

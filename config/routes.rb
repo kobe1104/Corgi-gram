@@ -8,5 +8,6 @@ Rails.application.routes.draw do
     resources :comments
     resources :likes
     resources :follows
+    resources :search
   end
 end

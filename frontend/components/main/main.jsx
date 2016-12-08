@@ -8,18 +8,36 @@ class Main extends React.Component {
   constructor(props) {
     super(props);
     this.updateSearch = this.updateSearch.bind(this);
+    this.showResults = this.showResults.bind(this);
     this.state = {search: ""};
   }
 
   updateSearch(searchString) {
-    this.setState({search: searchString})
+    this.setState({search: searchString});
+    this.props.fetchSearch(searchString);
   }
 
+  showResults() {
+    if (this.props.searchResults.length > 0) {
+      return (
+        <ul className='search-results-ul'>
+          {
+            this.props.searchResults.map((user, i) =>
+              <li className="search-user" key={i} onClick={() => this.props.router.push(`/users/${user.id}`)}>
+                <img className="search-user-img" src={user.icon_url}/>
+                {user.username}
+              </li>
+            )
+          }
+        </ul>
+      );
+    }
+  }
 
   render () {
     if (this.props.currentUser) {
       return (
-        <div>
+        <div >
           <header className='main-header'>
             <div className='header-logo-group'>
               <img className='corgi-icon' src='https://res.cloudinary.com/corgi1989/image/upload/c_scale,w_98/v1478899902/corgi_logo_to56fa.png'
@@ -32,6 +50,9 @@ class Main extends React.Component {
             </div>
             <div className='search-bar'>
               <SearchBar onChange={(input, resolve) => {this.updateSearch(input)}} />
+              <div className='search-results'>
+                {this.showResults()}
+              </div>
             </div>
             <div className='header-user-group'>
               <br/>
