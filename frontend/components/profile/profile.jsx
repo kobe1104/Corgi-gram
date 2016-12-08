@@ -49,7 +49,7 @@ class Profile extends React.Component {
   render() {
     if (this.props.currentUser) {
       return(
-        <div className='profile-container'>
+        <div className='profile-container' onClick={() => this.props.clearSearch()}>
           <div className='profile-box'>
             <img className='profile-icon' src={this.props.currentUser.icon_url}/>
             <div className='profile-info'>
