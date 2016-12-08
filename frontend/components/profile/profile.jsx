@@ -50,6 +50,7 @@ class Profile extends React.Component {
     if (this.props.currentUser) {
       return(
         <div className='profile-container' onClick={() => this.props.clearSearch()}>
+
           <div className='profile-box'>
             <img className='profile-icon' src={this.props.currentUser.icon_url}/>
             <div className='profile-info'>
@@ -61,6 +62,7 @@ class Profile extends React.Component {
                 <span>{this.props.following} following</span>
               </div>
             </div>
+
             <div className= 'profile-buttons'>
               <button className='profile-edit-button' onClick={() =>
                   this.props.router.push('/edit')}>Edit Profile</button>
