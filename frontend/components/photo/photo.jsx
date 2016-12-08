@@ -7,6 +7,7 @@ class Photo extends React.Component {
     super(props);
     this.iconUrl = this.iconUrl.bind(this);
     this.submitHandler = this.submitHandler.bind(this);
+    this.shuffle = this.shuffle.bind(this);
     this.state = {comment: {body: ""}}
   }
 
@@ -67,7 +68,13 @@ class Photo extends React.Component {
     }
   }
 
-
+  shuffle(arr) {
+    for (let i = arr.length; i; i--) {
+        let j = Math.floor(Math.random() * i);
+        [arr[i - 1], arr[j]] = [arr[j], arr[i - 1]];
+    }
+    return arr;
+  }
 
   render() {
     if (this.props.currentUser) {
@@ -75,7 +82,7 @@ class Photo extends React.Component {
         <div className='feed-container' onClick={() => this.props.clearSearch()}>
 
           <ul className='feed-box'>
-            {this.props.photos.map((photo, i) => <li key={i}>
+            {this.shuffle(this.props.photos).map((photo, i) => <li key={i}>
             <div className='feed-author'>
               <img onClick={() => this.props.router.push(`/users/${photo.user.id}`)} src={photo.user.icon_url}/>
               <div onClick={() => this.props.router.push(`/users/${photo.user.id}`)}>{photo.user.username}</div>
