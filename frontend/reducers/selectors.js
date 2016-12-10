@@ -17,7 +17,7 @@ export const photosByCurrentUser = (state) => {
   }
 };
 
-export const photosNotByUser = state => {
+export const allPhotos = state => {
 
   if (state.session.currentUser) {
     const currentUserId = state.session.currentUser.id;

@@ -11,15 +11,18 @@
 
 
 .feed-comment-form {
-  margin-bottom: 30px;
+  margin-bottom: 3px;
 }
 
+
 .feed-container li {
-  margin-bottom: 50px;
+  margin-top: 50px;
   list-style-type: none;
   margin-right:85px;
   // padding-right: 100px;
-  border: 1px solid black;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  background-color: white;
 }
 
 .feed-number-likes {
@@ -40,6 +43,7 @@
 .feed-box {
   margin-left: 100px;
 }
+
 
 
 .feed-photo {
@@ -91,7 +95,7 @@
   border: none;
   font-size: 15px;
   margin-bottom: 2px;
-  background-color: #fafafa;
+  background-color: white;
   // border: 1px solid black;
   width: 300px;
 }
@@ -106,8 +110,7 @@
 .feed-comments li {
   border: none;
   font-size: 15px;
-  margin-left: 20px;
-  margin-bottom: 0px;
+  margin:0px 0px 0px 20px;
 }
 
 .feed-comment-submit {
@@ -117,20 +120,25 @@
 .feed-author {
   display: flex;
   flex-direction: row;
-  justify-content:flex-start;
-  margin-top: 20px;
+  justify-content:space-between;
+  margin-top: 10px;
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
   // border: 1px solid black;
 }
 
-.feed-author:hover {
-  cursor: pointer;
+.feed-author-2 {
+  display: flex;
 }
 
-.feed-author img {
-  height: 50px;
-  width: 50px;
+.feed-oldness {
+  margin-right: 30px;
+  padding-top: 15px;
+}
+
+.feed-username {
+  padding-top: 10px;
 }
 
 .feed-author div {
@@ -139,14 +147,26 @@
   margin-top: 5px;
 }
 
+.feed-author div:hover {
+  cursor: pointer;
+}
+
+.feed-author img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.feed-author img:hover {
+  cursor: pointer;
+}
+
+
+
 .feed-captions {
-  // padding-left: 85px;
-  // border: 1px solid black;
-  width: 400px;
-  // margin-right: ;
+  font-size: 18px;
 }
 
 .feed-box li {
   width: 600px;
-  // padding-right: 200px;
 }

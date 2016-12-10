@@ -82,10 +82,13 @@ class Photo extends React.Component {
         <div className='feed-container' onClick={() => this.props.clearSearch()}>
 
           <ul className='feed-box'>
-            {this.shuffle(this.props.photos).map((photo, i) => <li key={i}>
+            {this.props.photos.map((photo, i) => <li key={i}>
             <div className='feed-author'>
-              <img onClick={() => this.props.router.push(`/users/${photo.user.id}`)} src={photo.user.icon_url}/>
-              <div onClick={() => this.props.router.push(`/users/${photo.user.id}`)}>{photo.user.username}</div>
+              <div className="feed-author-2">
+                <img onClick={() => this.props.router.push(`/users/${photo.user.id}`)} src={photo.user.icon_url}/>
+                <div className="feed-username" onClick={() => this.props.router.push(`/users/${photo.user.id}`)}>{photo.user.username}</div>
+              </div>
+              <div className='feed-oldness'>{photo.oldness.match(/\d+/) + photo.oldness.substr(photo.oldness.indexOf(" ") + 1)[0]}</div>
             </div>
             <img className='feed-photo' key={photo.photo_url} src={photo.photo_url}/>
             <div className='feed-number-likes'>{photo.likes.length} likes</div>

@@ -2,7 +2,7 @@
   json.set! photo.id do
     json.extract! photo, :id, :author_id, :photo_url, :captions, :type
     json.likes photo.likes, :id, :author_id, :photo_id
-    
+
     json.user photo.user, :id, :username, :icon_url
 
     json.comments do
@@ -13,6 +13,6 @@
         end
       end
     end
-
+    json.oldness time_ago_in_words(photo.created_at)
   end
 end

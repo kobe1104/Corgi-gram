@@ -1,9 +1,6 @@
 <!-- TODO -->
 1. add default profile pic
 2. add default following to new users
-3. fixed minified warning
-4. to fixed photo size issue add the following to the img css:
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
+3. Add time ago  by adding json.oldness time_ago_in_words(post.created_at)
+to photo view and render it.
 <!-- questions -->
