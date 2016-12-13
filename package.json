@@ -19,6 +19,7 @@
     "es6-promise": "^3.0.2",
     "es6-promises": "^1.0.10",
     "figaro": "^0.1.10",
+    "jquery": "^3.1.1",
     "react": "^15.3.2",
     "react-button": "^1.2.1",
     "react-dom": "^15.3.2",

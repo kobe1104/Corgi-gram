@@ -4,15 +4,11 @@
 }
 
 .about-me-box {
-  display:flex;
   flex-direction: row;
   margin-top: 5%;
-
-}
-
-.my-story {
-  // padding: 0px 20px;
-
+  height: 350px;
+  margin: 10% 10% 0 10%;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .portrait {
@@ -27,18 +23,30 @@
   display:flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 10%;
+  // margin-top: 10%;
 }
 
 .about-me-links img {
   width: 100px;
   height: 100px;
   padding: 20px;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .about-resume {
   width: 150px;
   height: 150px;
   padding: 20px;
+}
+
+.about-linkedin:hover {
+  cursor:pointer;
+}
+
+.about-github:hover {
+  cursor:pointer;
+}
+
+.about-email:hover {
+  cursor:pointer;  
 }
