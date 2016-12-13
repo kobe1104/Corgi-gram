@@ -36,4 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
  $( ".about-email" ).click(function() {
    window.location.href="mailto:hhsu0219@gmail.com";
  });
-})
+
+ 
+});
