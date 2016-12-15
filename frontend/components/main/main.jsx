@@ -57,7 +57,7 @@ class Main extends React.Component {
             <div className='header-user-group'>
               <br/>
               <div className='wrapper-heart'>
-                <img className='user-heart' onClick={() => this.props.router.push('/about')} src='http://res.cloudinary.com/corgi1989/image/upload/c_scale,w_201/v1481587278/developer-icon-17862_lfzu29.png'/>
+                <img className='user-heart' onClick={() => this.props.router.push('/about')} src='http://res.cloudinary.com/corgi1989/image/upload/c_scale,w_85/v1481743564/about-icon_mtu5ug.png'/>
                 <span className='heart-text'>About Developer</span>
               </div>
               <br/>
