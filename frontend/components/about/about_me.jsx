@@ -11,9 +11,18 @@ class About extends React.Component {
             I really enjoy working on the front end side of web development as well as pair programming. Creating an efficient and user friendly website with a team always makes me feel proud.
         </div>
         <div className="about-me-links">
-          <img className="about-linkedin" src="http://res.cloudinary.com/corgi1989/image/upload/v1479490285/blue_linkdin_a38km8.png"/>
-          <img className="about-github" src="http://res.cloudinary.com/corgi1989/image/upload/v1479490285/blue_github_zjuqyr.png"/>
-          <img className="about-email" src="http://res.cloudinary.com/corgi1989/image/upload/c_scale,w_285/v1480869730/email_icon_djamxn.png"/>
+          <div className="linkedin-wrap">
+            <img className="about-linkedin" src="http://res.cloudinary.com/corgi1989/image/upload/v1479490285/blue_linkdin_a38km8.png"/>
+            <span className="linkedin-text">LinkedIn</span>
+          </div>
+          <div className="github-wrap">
+            <img className="about-github" src="http://res.cloudinary.com/corgi1989/image/upload/v1479490285/blue_github_zjuqyr.png"/>
+            <span className="github-text">Github</span>
+          </div>
+          <div className="email-wrap">
+            <img className="about-email" src="http://res.cloudinary.com/corgi1989/image/upload/c_scale,w_285/v1480869730/email_icon_djamxn.png"/>
+            <span className="email-text">Email Me!</span>
+          </div>
         </div>
 
       </div>

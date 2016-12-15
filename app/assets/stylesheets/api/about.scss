@@ -48,5 +48,85 @@
 }
 
 .about-email:hover {
-  cursor:pointer;  
+  cursor:pointer;
+}
+
+
+.email-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.email-wrap .email-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 87%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.email-wrap:hover .email-text {
+  visibility:visible;
+}
+
+
+.linkedin-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.linkedin-wrap .linkedin-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 87%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.linkedin-wrap:hover .linkedin-text {
+  visibility:visible;
+}
+
+.github-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.github-wrap .github-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 87%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.github-wrap:hover .github-text {
+  visibility:visible;
 }
