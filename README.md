@@ -17,7 +17,9 @@ serve the frontend interactions.
 
   Upload your photos and build your own profile page! Users can upload
   their photos easily with Corgigram tools and add any descriptions to
-  them. The Photos are visible to all your fans and followers!
+  them. The Photos are visible to all your followers! Photos are stored
+  at Cloudinary an online cloud service provider. It sends out an Ajax
+  request to get the urls of each photo when rendering.
 
   ![](http://res.cloudinary.com/corgi1989/image/upload/v1478908976/post_ebjjbl.jpg)
 
@@ -25,15 +27,20 @@ serve the frontend interactions.
 
   Explore the corgi world! Share other corgis' happiness or sadness by
   checking out their photos. Users are able to LIKE the photos by simply
-  clicking on the corgi paw!
+  clicking on the corgi paw! All the Likes are stored in a Postgres database
+  table. Clicking the Paw will update this table.
 
-### Follow Users!
+### Search and Follow Users!
 
-  If you really like some of the corgis you see on the feed, follow them
+  If you really like some of the corgis you found on search, follow them
   by clicking the FOLLOW button at their profile page! By following them,
   the user gets all the latest updates from the following corgis!!
+  The search bar allows users to find other users by entering their names.
+  It gets all the matched users from the database on each entered character.
+  The Follow button works exactly the same as Likes which updates the Follow
+  table.
 
-  ![](http://res.cloudinary.com/corgi1989/image/upload/v1478909074/user_af4pyu.jpg)  
+  ![](http://res.cloudinary.com/corgi1989/image/upload/v1478909074/user_af4pyu.jpg)
 
 ## Future Directions for the Project
 
@@ -48,9 +55,3 @@ serve the frontend interactions.
 
   Choose a TAG for your photo! Photos with tags have higher exposure in
   the feed. It also helps to make the photos more descriptive!!
-
-
-### Search Posts by Tags!
-
-  Have a specific topic of photos that you want to see? Enter the tags
-  and get all the related photos!
