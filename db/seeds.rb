@@ -1,123 +1,113 @@
 # photo urls:
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1479625945/tlj9hudxdk3ze6jsrsjw.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/c_scale,w_700/v1478567079/jqapybwijjrnqlseaqah.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1479625945/ijvco4omosn2ffbl3gxq"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1479625945/silly_corgi_tg7nwy"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478825794/silly_corgi_tg7nwy.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849273/Corgigram/images_8.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849273/Corgigram/download_3.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849273/Corgigram/download_4.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849273/Corgigram/cute-cool-corgis.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849273/Corgigram/download_1.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849273/Corgigram/26.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849273/Corgigram/download_2.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849273/Corgigram/images_10.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849273/Corgigram/images_9.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849273/Corgigram/images_11.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849274/Corgigram/images_13.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849274/Corgigram/images_12.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849274/Corgigram/download_9.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849274/Corgigram/download_8.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849274/Corgigram/download_7.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849274/Corgigram/images_14.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849274/Corgigram/download_6.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849274/Corgigram/download_5.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849274/Corgigram/images_15.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849274/Corgigram/images_16.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849274/Corgigram/funny-corgi-dog-sleeping-bread.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849274/Corgigram/images_17.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849275/Corgigram/images_18.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849275/Corgigram/images_19.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849275/Corgigram/images_1.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849275/Corgigram/download.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849275/Corgigram/Grammar-Corgi-2.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849275/Corgigram/images_20.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849275/Corgigram/images_2.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849275/Corgigram/images_4.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849275/Corgigram/images_23.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849275/Corgigram/images_21.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849275/Corgigram/images_22.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849276/Corgigram/images_3.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849276/Corgigram/images_5.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849275/Corgigram/download_10.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849276/Corgigram/images_25.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849276/Corgigram/images_24.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849276/Corgigram/images_6.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849276/Corgigram/images_7.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849276/Corgigram/images_6.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849276/Corgigram/images_7.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849276/Corgigram/images_27.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849276/Corgigram/images_26.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849276/Corgigram/images_28.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849277/Corgigram/images_30.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849277/Corgigram/images_31.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849277/Corgigram/images_32.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849277/Corgigram/images_29.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849277/Corgigram/images_35.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849277/Corgigram/images_34.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849277/Corgigram/images_33.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849277/Corgigram/images_37.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849277/Corgigram/images_38.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849278/Corgigram/images_39.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849277/Corgigram/images_36.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849278/Corgigram/images_45.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849278/Corgigram/images_41.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849278/Corgigram/images_40.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849278/Corgigram/images_44.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849278/Corgigram/images_43.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849278/Corgigram/images_42.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849278/Corgigram/images_46.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849278/Corgigram/images_47.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849279/Corgigram/images_49.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849279/Corgigram/images_51.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849279/Corgigram/images_50.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849279/Corgigram/images_52.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849279/Corgigram/images_53.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849279/Corgigram/images_48.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849279/Corgigram/images_55.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849279/Corgigram/images_56.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849280/Corgigram/images_57.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849280/Corgigram/images_58.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849280/Corgigram/images_60.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849280/Corgigram/images_59.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849279/Corgigram/images_54.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849280/Corgigram/images_61.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849280/Corgigram/images_62.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849280/Corgigram/images_63.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849281/Corgigram/images_66.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849280/Corgigram/images_65.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849281/Corgigram/images_68.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849281/Corgigram/images_69.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849281/Corgigram/images_71.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849281/Corgigram/images_67.jpg"
-  # "https://res.cloudinary.com/corgi1989/image/upload/v1478849281/Corgigram/images_72.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950752/corgigram22/1.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950759/corgigram22/10.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950761/corgigram22/11.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950763/corgigram22/12.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950766/corgigram22/14.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950766/corgigram22/15.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950767/corgigram22/16.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950768/corgigram22/17.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950763/corgigram22/18.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950754/corgigram22/19.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950766/corgigram22/2.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950754/corgigram22/20.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950755/corgigram22/21.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950757/corgigram22/22.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950758/corgigram22/23.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950764/corgigram22/24.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950760/corgigram22/25.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950763/corgigram22/26.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950766/corgigram22/27.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950768/corgigram22/28.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950766/corgigram22/29.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950757/corgigram22/3.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950768/corgigram22/30.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950767/corgigram22/31.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950770/corgigram22/32.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950768/corgigram22/33.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950769/corgigram22/34.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950769/corgigram22/35.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950769/corgigram22/36.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950769/corgigram22/37.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950769/corgigram22/38.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950774/corgigram22/39.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950758/corgigram22/4.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950770/corgigram22/40.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950774/corgigram22/41.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950778/corgigram22/42.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950776/corgigram22/43.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950772/corgigram22/44.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950777/corgigram22/45.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950778/corgigram22/46.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950772/corgigram22/47.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950774/corgigram22/48.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950780/corgigram22/49.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950778/corgigram22/50.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950780/corgigram22/51.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950780/corgigram22/52.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950781/corgigram22/53.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950788/corgigram22/54.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950782/corgigram22/55.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950782/corgigram22/56.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950782/corgigram22/57.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950784/corgigram22/58.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950786/corgigram22/59.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950783/corgigram22/60.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950784/corgigram22/61.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950784/corgigram22/62.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950796/corgigram22/63.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950785/corgigram22/64.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950790/corgigram22/65.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950786/corgigram22/66.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950792/corgigram22/67.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950791/corgigram22/68.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950788/corgigram22/69.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950757/corgigram22/7.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950790/corgigram22/70.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950790/corgigram22/71.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950792/corgigram22/72.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950796/corgigram22/73.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950793/corgigram22/74.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950797/corgigram22/75.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950799/corgigram22/76.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950793/corgigram22/77.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950796/corgigram22/78.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950796/corgigram22/79.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950764/corgigram22/8.png"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950798/corgigram22/80.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950798/corgigram22/81.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950802/corgigram22/82.jpg"
+  # "http://res.cloudinary.com/corgi1989/image/upload/v1482950766/corgigram22/9.jpg"
+
+
 
 
 
 
 # users
-henry1 = User.create(username: 'henry1', password: 'password', email: 'abc111@gmail', nickname: "just a lonely corgi", icon_url:"https://res.cloudinary.com/corgi1989/image/upload/v1478849289/Corgigram/ridiculous-corgi-20.jpg");
-sir = User.create(username: 'Sir. Corgilim', password: 'password', email: 'abc111@gmail', nickname: 'Guest', icon_url: "https://s-media-cache-ak0.pinimg.com/236x/e0/c8/d6/e0c8d67a12b3145f68a30605708f0991.jpg");
-user1 = User.create(username: 'CorgiCorgi', password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849279/Corgigram/images_52.jpg");
-user2 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478891286/ejurqeq3l4odef6pbwia.jpg");
-user3 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849289/Corgigram/ridiculous-corgi-18.jpg");
-user4 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849289/Corgigram/ridiculous-corgi-141.jpg");
-user5 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849288/Corgigram/ridiculous-corgi-12.jpg");
-user6 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/c_scale,w_300/v1478849288/Corgigram/ridiculous-corgi-10.jpg");
-user7 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849287/Corgigram/images36.jpg");
-user8 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849287/Corgigram/images30.jpg");
-user9 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/c_scale,w_300/v1478849288/Corgigram/ridiculous-corgi-5.jpg");
-user10 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849286/Corgigram/images20.jpg");
-user11 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849287/Corgigram/images31.jpg");
-user12 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/c_scale,w_300/v1478849288/Corgigram/ridiculous-corgi-6.jpg");
-user13 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849285/Corgigram/images15.jpg");
-user14 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849285/Corgigram/images16.jpg");
-user15 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849286/Corgigram/images20.jpg");
-user16 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849284/Corgigram/images6.jpg");
-user17 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849284/Corgigram/images3.jpg");
-user18 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849284/Corgigram/images_95.jpg");
-user19 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849283/Corgigram/images_89.jpg");
-user20 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "https://res.cloudinary.com/corgi1989/image/upload/v1478849283/Corgigram/images_91.jpg");
+
+henry1 = User.create(username: 'henry1', password: 'password', email: 'abc111@gmail', nickname: "just a lonely corgi", icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950752/corgigram22/1.jpg");
+sir = User.create(username: 'Sir. Corgilim', password: 'password', email: 'abc111@gmail', nickname: 'Guest', icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950759/corgigram22/10.jpg");
+user1 = User.create(username: 'CorgiCorgi', password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950761/corgigram22/11.jpg");
+user2 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950763/corgigram22/12.jpg");
+user3 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950766/corgigram22/14.jpg");
+user4 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950766/corgigram22/15.jpg");
+user5 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950767/corgigram22/16.jpg");
+user6 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950763/corgigram22/18.jpg");
+user7 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950754/corgigram22/19.jpg");
+user8 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950766/corgigram22/2.jpg");
+user9 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950754/corgigram22/20.jpg");
+user10 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950755/corgigram22/21.jpg");
+user11 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950757/corgigram22/22.jpg");
+user12 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950758/corgigram22/23.jpg");
+user13 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950764/corgigram22/24.jpg");
+user14 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950760/corgigram22/25.jpg");
+user15 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950763/corgigram22/26.jpg");
+user16 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950766/corgigram22/27.jpg");
+user17 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950768/corgigram22/28.jpg");
+user18 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950766/corgigram22/29.jpg");
+user19 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950757/corgigram22/3.jpg");
+user20 = User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.email, nickname: Faker::Internet.user_name, icon_url: "http://res.cloudinary.com/corgi1989/image/upload/v1482950768/corgigram22/30.jpg");
 
 
 
