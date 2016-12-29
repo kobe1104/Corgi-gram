@@ -6,9 +6,11 @@ class About extends React.Component {
     return (
       <div className="about-me-container" onClick={() => this.props.clearSearch()}>
         <div className="about-me-box">
-            I am a database engineer with over 2 years of experience in both data integration and data analysis. I have produced valuable and actionable insights for our auditing team to make business decisions.
-            Programming has always been my passion. Therefore, I decided to attend to a programming bootcamp to learn more about it. While I was there, I picked up a couple languages and frameworks within 2 months. On top of that, I built a full stack single page web application independently with Ruby on Rails and React.js framework in 9 days. I also made a user interactive browser game that challenges players reaction time by using JavaScript for game logic, CreateJS for game physics and Howler.js for sound effects.
-            I really enjoy working on the front end side of web development as well as pair programming. Creating an efficient and user friendly website with a team always makes me feel proud.
+            <p>I was a database engineer with over 2 years of experience in both data integration and data analysis. I have produced valuable and actionable insights for our auditing team to make business decisions.</p>
+
+            <p>I chose to become a web developer since programming has always been my passion. I picked up a few languages and frameworks on the side and was able to build this website with JavaScript, React, Redux, Ruby and Rails.</p>
+
+            <p>I really enjoy building interesting web applications. Creating an efficient and user friendly website always makes me feel proud.</p>
         </div>
         <div className="about-me-links">
           <div className="linkedin-wrap">
