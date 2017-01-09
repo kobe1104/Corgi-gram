@@ -30,17 +30,17 @@ class Profile extends React.Component {
           this.uploadPhoto(photo[0].secure_url);
         }
       }
-    )
+    );
   }
 
   uploadPhoto(url) {
-
     const photo = {
       author_id: this.props.currentUser.id,
       photo_url: url,
       captions: 'Welcome to Corgigram!!'
     };
     this.props.createPhoto(photo);
+    window.location.reload();
   };
 
 

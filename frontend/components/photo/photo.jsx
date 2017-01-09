@@ -76,7 +76,16 @@ class Photo extends React.Component {
     return arr;
   }
 
+  photoOldness(photo) {
+    if (photo.oldness != "less than a minute") {
+      return photo.oldness.match(/\d+/) + photo.oldness.substr(photo.oldness.indexOf(" ") + 1)[0]
+    } else {
+      return "less than a minute"
+    }
+  }
+
   render() {
+
     if (this.props.currentUser) {
       return (
         <div className='feed-container' onClick={() => this.props.clearSearch()}>
@@ -88,7 +97,7 @@ class Photo extends React.Component {
                 <img onClick={() => this.props.router.push(`/users/${photo.user.id}`)} src={photo.user.icon_url}/>
                 <div className="feed-username" onClick={() => this.props.router.push(`/users/${photo.user.id}`)}>{photo.user.username}</div>
               </div>
-              <div className='feed-oldness'>{photo.oldness.match(/\d+/) + photo.oldness.substr(photo.oldness.indexOf(" ") + 1)[0]}</div>
+              <div className='feed-oldness'>{this.photoOldness(photo)}</div>
             </div>
             <img className='feed-photo' key={photo.photo_url} src={photo.photo_url}/>
             <div className='feed-number-likes'>{photo.likes.length} likes</div>
