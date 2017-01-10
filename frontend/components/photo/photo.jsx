@@ -78,7 +78,7 @@ class Photo extends React.Component {
 
   photoOldness(photo) {
     if (photo.oldness != "less than a minute") {
-      return photo.oldness.match(/\d+/) + photo.oldness.substr(photo.oldness.indexOf(" ") + 1)[0]
+      return photo.oldness.match(/\d+/) + photo.oldness.photo.oldness.substr(photo.oldness.indexOf(photo.oldness.match(/\s+\S*$/)))[1]
     } else {
       return "less than a minute"
     }
