@@ -49,7 +49,7 @@ class Main extends React.Component {
               <br/>
             </div>
             <div className='search-bar'>
-              <SearchBar onChange={(input, resolve) => {this.updateSearch(input)}} />
+              <SearchBar placeholder="Search.." onChange={(input, resolve) => {this.updateSearch(input)}} />
               <div className='search-results'>
                 {this.showResults()}
               </div>
